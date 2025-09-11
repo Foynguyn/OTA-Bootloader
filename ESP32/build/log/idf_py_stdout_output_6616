@@ -1,0 +1,1393 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET)ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 27 2025 09:23:39[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 001c0000[0m
+[0;32mI (80) boot:  3 spiffs           Unknown data     01 82 001d0000 00200000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20438h (132152) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=00030460 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00030484 vaddr=3ffb0000 size=03ef0h ( 16112) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003437c vaddr=40080000 size=0bc9ch ( 48284) load[0m
+[0;32mI (172) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=96da4h (617892) map[0m
+[0;32mI (384) esp_image: segment 5: paddr=000d6dcc vaddr=4008bc9c size=0cb28h ( 52008) load[0m
+[0;32mI (416) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (416) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) app_init: Application information:[0m
+[0;32mI (435) app_init: Project name:     softap_sta[0m
+[0;32mI (439) app_init: App version:      1[0m
+[0;32mI (442) app_init: Compile time:     Aug 27 2025 09:23:24[0m
+[0;32mI (447) app_init: ELF file SHA256:  159631f62...[0m
+[0;32mI (452) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (456) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (460) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (464) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (468) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFB81D0 len 00027E30 (159 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (495) heap_init: At 400987C4 len 0000783C (30 KiB): IRAM[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (504) spi_flash: flash io: dio[0m
+[0;32mI (508) main_task: Started on CPU0[0m
+[0;32mI (518) main_task: Calling app_main()[0m
+[0;32mI (538) http_server: Initializing SPIFFS[0m
+[0;32mI (688) http_server: Partition size: total:1920401, used:3263[0m
+[0;32mI (688) http_server: UART initialized for STM32 communication[0m
+[0;32mI (688) wifi_app: Starting WiFi application...[0m
+[0;32mI (688) main_task: Returned from app_main()[0m
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: accept mbox: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (708) wifi_init: udp mbox: 6[0m
+[0;32mI (708) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5760[0m
+[0;32mI (718) wifi_init: tcp rx win: 5760[0m
+[0;32mI (718) wifi_init: tcp mss: 1440[0m
+[0;32mI (728) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (728) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (978) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1068) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1078) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1078) http_server: http server config: Port: '80', task priority: '4'[0m
+[0;32mI (1078) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+[0;32mI (1088) http_server: http server config: Register URI handlers[0m
+[0;32mI (116838) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (117038) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (119808) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (120518) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (120528) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (133818) http_server: index.html requested[0m
+[0;32mI (133908) http_server: style.css requested[0m
+[0;32mI (133928) http_server: script.js requested[0m
+[0;32mI (141518) http_server: Firmware upload started[0m
+[0;32mI (141518) http_server: Content length: 3099 bytes[0m
+[0;32mI (141518) http_server: Content starts at position: 153[0m
+[0;32mI (141568) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (141648) http_server: Wrote 1894 bytes from first chunk[0m
+[0;32mI (141668) http_server: Upload progress: 99% (3071/3099 bytes)[0m
+[0;32mI (141668) http_server: Upload progress: 100% (3099/3099 bytes)[0m
+[0;32mI (141668) http_server: Raw upload completed. Now cleaning up multipart boundaries...[0m
+[0;32mI (141678) http_server: Searching for multipart boundary in 2946 bytes...[0m
+[0;32mI (141678) http_server: Last 100 bytes before cleanup:[0m
+[98]G[01]6[F2][E7]LK[00][08]LK[00][08]LK[00][08]PK[00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGUA[00][08]1A[00][08][0D][0A]------WebKitFormBoundaryBPVR821yiPJ2c8SD--[0D][0A]
+[0;32mI (141708) http_server: Found boundary pattern at position 2902[0m
+[0;32mI (141708) http_server: Boundary line starts at position 2902[0m
+[0;32mI (141718) http_server: Clean file size after boundary removal: 2902 bytes (was 2946)[0m
+[0;32mI (141728) http_server: Final clean file size after whitespace removal: 2900 bytes[0m
+[0;32mI (141728) http_server: Final clean file size: 2900 bytes[0m
+[0;32mI (141738) http_server: Last 50 bytes of cleaned file:[0m
+[F2][E7]LK[00][08]LK[00][08]LK[00][08]PK[00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGUA[00][08]1A[00][08]
+[0;32mI (141798) http_server: File upload completed successfully. Clean file size: 2900 bytes[0m
+[0;32mI (141798) http_server: Firmware upload and processing completed successfully[0m
+[0;32mI (141808) http_server: HTTP_MSG_OTA_UPDATE_SUCCESSFULL[0m
+[0;32mI (143508) http_server: Firmware download to STM32 started with protocol[0m
+[0;32mI (143508) http_server: Firmware file size: 2900 bytes[0m
+[0;32mI (143508) http_server: Firmware checksum: 0x00000067[0m
+[0;32mI (143508) http_server: Step 1: Sending FW_REQUEST[0m
+[0;32mI (143518) http_server: Sent command: 28[0m
+[0;32mI (143518) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (143538) http_server: Step 2: Waiting for FW_READY[0m
+[0;33mW (143538) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143538) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (143548) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (143548) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (143568) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143568) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143588) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143588) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143608) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (143608) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143628) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (143628) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (143648) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143648) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143668) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143668) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (143688) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143688) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (143708) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143708) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (143728) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143728) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (143748) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (143748) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143768) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143768) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143788) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143788) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143808) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143808) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (143828) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143828) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143848) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143848) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143868) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143868) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143888) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143888) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (143908) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143908) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (143928) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (143928) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (143948) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (143948) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (143968) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143968) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (143988) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (143988) http_server: Received unexpected response: 249 (expected: 31)[0m
+[0;33mW (144008) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144008) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144028) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144028) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144048) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (144048) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144068) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (144068) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144088) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144088) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (144108) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (144108) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144128) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144128) http_server: Received unexpected response: 249 (expected: 31)[0m
+[0;33mW (144148) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144148) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (144168) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144168) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144188) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (144188) http_server: Received unexpected response: 250 (expected: 31)[0m
+[0;33mW (144208) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144208) http_server: Received unexpected response: 249 (expected: 31)[0m
+[0;33mW (144228) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144228) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144248) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144248) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144268) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (144268) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144288) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (144288) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144308) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (144308) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144328) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144348) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144348) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144368) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144368) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144388) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144388) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144408) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (144408) http_server: Received unexpected response: 250 (expected: 31)[0m
+[0;33mW (144428) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144428) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144448) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144448) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144468) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144468) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144488) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144488) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144508) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144508) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144528) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144528) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144548) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144548) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144568) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144568) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144588) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144588) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144608) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144608) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144628) http_server: Received unexpected response: 6 (expected: 31)[0m
+[0;33mW (144628) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (144648) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144648) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (144668) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144668) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144688) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144688) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144708) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144708) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144728) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (144728) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144748) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144748) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144768) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144768) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (144788) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144788) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144808) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144808) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144828) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144828) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144848) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144848) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144868) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144868) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144888) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144888) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144908) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (144908) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144928) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144928) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (144948) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144948) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (144968) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (144968) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (144988) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (144988) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145008) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145008) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (145028) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145028) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145048) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145048) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145068) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145068) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145088) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145088) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145108) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145108) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145128) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145128) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145148) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145148) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145168) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145168) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145188) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145188) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145208) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145208) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145228) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145228) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (145248) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145248) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145268) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145268) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145288) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145288) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145308) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145308) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145328) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145328) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145348) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145348) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145368) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145368) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145388) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145388) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145408) http_server: Received unexpected response: 6 (expected: 31)[0m
+[0;33mW (145408) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145428) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145428) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145448) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145448) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (145468) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145468) http_server: Received unexpected response: 249 (expected: 31)[0m
+[0;33mW (145488) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145508) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145508) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145528) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145528) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145548) http_server: Received unexpected response: 0 (expected: 31)[0m
+[1;31mE (145548) http_server: Timeout waiting for response: 31[0m
+[0;33mW (145548) http_server: FW_READY retry attempt 2/3[0m
+[0;32mI (145548) http_server: Sent command: 28[0m
+[0;33mW (145568) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (145568) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145588) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145588) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145608) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145608) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145628) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145628) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145648) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145648) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (145668) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145668) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145688) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145688) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145708) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145708) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145728) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145728) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145748) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145748) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145768) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145768) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145788) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145788) http_server: Received unexpected response: 250 (expected: 31)[0m
+[0;33mW (145808) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (145808) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145828) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145828) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145848) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145848) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145868) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145868) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145888) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145888) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (145908) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (145908) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (145928) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145928) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (145948) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145948) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (145968) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145968) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (145988) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (145988) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146008) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146008) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146028) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146028) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146048) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146048) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146068) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146068) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (146088) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146088) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146108) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146108) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (146128) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146128) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146148) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146148) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146168) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146168) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146188) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146188) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146208) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146208) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146228) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (146228) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146248) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146248) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146268) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146268) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146288) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146288) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146308) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146308) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146328) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146328) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146348) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146348) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146368) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (146368) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146388) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146388) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146408) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146408) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146428) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (146428) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146448) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (146448) http_server: Received unexpected response: 250 (expected: 31)[0m
+[0;33mW (146468) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146488) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146488) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146508) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146508) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146518) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146528) http_server: Received unexpected response: 250 (expected: 31)[0m
+[0;33mW (146538) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146548) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146558) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (146568) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146578) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146588) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146598) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146598) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146618) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146618) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146638) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146638) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146658) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146658) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146678) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146678) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146698) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146698) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146718) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146718) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146738) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146738) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146758) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146758) http_server: Received unexpected response: 249 (expected: 31)[0m
+[0;33mW (146778) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (146778) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146798) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146798) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146818) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146818) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (146838) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146838) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146858) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146858) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146878) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146878) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146898) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146898) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (146918) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146918) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (146938) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (146938) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (146958) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (146958) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146978) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146978) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (146998) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (146998) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147018) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147018) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147038) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147038) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147058) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (147058) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147078) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147078) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147098) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (147098) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147118) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147118) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147138) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147138) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147158) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147158) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147178) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147178) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147198) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147198) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147218) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147218) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147238) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147238) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147258) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147258) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147278) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147278) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147298) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147298) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (147318) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147318) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (147338) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147338) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147358) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147358) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147378) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147378) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147398) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (147398) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147418) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (147418) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147438) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (147438) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147458) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147478) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147478) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147498) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147498) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147518) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (147518) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147538) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147538) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147558) http_server: Received unexpected response: 0 (expected: 31)[0m
+[1;31mE (147558) http_server: Timeout waiting for response: 31[0m
+[0;33mW (147558) http_server: FW_READY retry attempt 3/3[0m
+[0;32mI (147568) http_server: Sent command: 28[0m
+[0;33mW (147578) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147578) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147598) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147598) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147618) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147618) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147638) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147638) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147658) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147658) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147678) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147678) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (147698) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147698) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147718) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (147718) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147738) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147738) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147758) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147758) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147778) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147778) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (147798) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147818) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (147818) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147838) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147838) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (147858) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147858) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147878) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147878) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147898) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147898) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147918) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147918) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147938) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147938) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (147958) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (147958) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147978) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147978) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (147998) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (147998) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148018) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148018) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148038) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148038) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148058) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148058) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148078) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148078) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148098) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148098) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148118) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148118) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148138) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148138) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148158) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148158) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148178) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148178) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (148198) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148198) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148218) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148218) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148238) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (148238) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148258) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148258) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148278) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148278) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148298) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (148298) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148318) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148318) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148338) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148338) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148358) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148358) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148378) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148378) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148398) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148398) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (148418) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148418) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148438) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148438) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148458) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148458) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148478) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148478) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148498) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148498) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148518) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148518) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148538) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148538) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148558) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148558) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148578) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148578) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148598) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148598) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148618) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148618) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148638) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148638) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148658) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148658) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148678) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148678) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148698) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148698) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (148718) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (148718) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148738) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148738) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148758) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148758) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (148778) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148778) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (148798) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148798) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148818) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148818) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148838) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148838) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148858) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (148858) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148878) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148878) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148898) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148898) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148918) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148918) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (148938) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148938) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148958) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (148958) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (148978) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148978) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (148998) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (148998) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (149018) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149018) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149038) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149038) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149058) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149058) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (149078) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149078) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149098) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (149098) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (149118) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (149118) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149138) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149138) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149158) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149158) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (149178) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149178) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149198) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149198) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149218) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (149218) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149238) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (149238) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149258) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (149258) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149278) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149278) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149298) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (149298) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149318) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (149318) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149338) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (149338) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (149358) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149358) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149378) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149378) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149398) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (149398) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (149418) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (149418) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (149438) http_server: Received unexpected response: 3 (expected: 31)[0m
+[0;33mW (149438) http_server: Received unexpected response: 253 (expected: 31)[0m
+[0;33mW (149458) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (149458) http_server: Received unexpected response: 248 (expected: 31)[0m
+[0;33mW (149478) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (149478) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (149498) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149498) http_server: Received unexpected response: 251 (expected: 31)[0m
+[0;33mW (149518) http_server: Received unexpected response: 1 (expected: 31)[0m
+[0;33mW (149518) http_server: Received unexpected response: 255 (expected: 31)[0m
+[0;33mW (149538) http_server: Received unexpected response: 0 (expected: 31)[0m
+[0;33mW (149538) http_server: Received unexpected response: 252 (expected: 31)[0m
+[0;33mW (149558) http_server: Received unexpected response: 2 (expected: 31)[0m
+[0;33mW (149558) http_server: Received unexpected response: 254 (expected: 31)[0m
+[0;33mW (149578) http_server: Received unexpected response: 2 (expected: 31)[0m
+[1;31mE (149578) http_server: Timeout waiting for response: 31[0m
+[1;31mE (149578) http_server: STM32 completely unresponsive after 3 attempts - may need hardware reset[0m
+[0;33mW (149588) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - STM32 not ready for firmware update[0m
+[0;33mW (149598) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (157808) http_server: index.html requested[0m
+[0;32mI (157848) http_server: style.css requested[0m
+[0;32mI (157858) http_server: script.js requested[0m
+[0;32mI (164518) http_server: Firmware upload started[0m
+[0;32mI (164528) http_server: Content length: 3099 bytes[0m
+[0;32mI (164528) http_server: Content starts at position: 153[0m
+[0;32mI (164528) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (164558) http_server: Wrote 1894 bytes from first chunk[0m
+[0;32mI (164568) http_server: Upload progress: 99% (3071/3099 bytes)[0m
+[0;32mI (164568) http_server: Upload progress: 100% (3099/3099 bytes)[0m
+[0;32mI (164578) http_server: Raw upload completed. Now cleaning up multipart boundaries...[0m
+[0;32mI (164588) http_server: Searching for multipart boundary in 2946 bytes...[0m
+[0;32mI (164588) http_server: Last 100 bytes before cleanup:[0m
+[98]G[01]6[F2][E7]LK[00][08]LK[00][08]LK[00][08]PK[00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGUA[00][08]1A[00][08][0D][0A]------WebKitFormBoundaryP4DOTeRSt6tBcC0s--[0D][0A]
+[0;32mI (164608) http_server: Found boundary pattern at position 2902[0m
+[0;32mI (164618) http_server: Boundary line starts at position 2902[0m
+[0;32mI (164618) http_server: Clean file size after boundary removal: 2902 bytes (was 2946)[0m
+[0;32mI (164628) http_server: Final clean file size after whitespace removal: 2900 bytes[0m
+[0;32mI (164638) http_server: Final clean file size: 2900 bytes[0m
+[0;32mI (164638) http_server: Last 50 bytes of cleaned file:[0m
+[F2][E7]LK[00][08]LK[00][08]LK[00][08]PK[00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGUA[00][08]1A[00][08]
+[0;32mI (164698) http_server: File upload completed successfully. Clean file size: 2900 bytes[0m
+[0;32mI (164698) http_server: Firmware upload and processing completed successfully[0m
+[0;32mI (164708) http_server: HTTP_MSG_OTA_UPDATE_SUCCESSFULL[0m
+[0;32mI (166308) http_server: Firmware download to STM32 started with protocol[0m
+[0;32mI (166308) http_server: Firmware file size: 2900 bytes[0m
+[0;32mI (166308) http_server: Firmware checksum: 0x00000067[0m
+[0;32mI (166308) http_server: Step 1: Sending FW_REQUEST[0m
+[0;32mI (166318) http_server: Sent command: 28[0m
+[0;32mI (166318) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (166338) http_server: Step 2: Waiting for FW_READY[0m
+[1;31mE (168338) http_server: Timeout waiting for response: 31[0m
+[0;33mW (168338) http_server: FW_READY retry attempt 2/3[0m
+[0;32mI (168338) http_server: Sent command: 28[0m
+[0;32mI (168338) http_server: Received expected response: 31[0m
+[0;32mI (168338) http_server: Step 3: Sending FW_LENGTH: 2900 bytes[0m
+[0;32mI (168348) http_server: Sent command: 2 with data: 2900[0m
+[0;32mI (168348) http_server: Step 4: Waiting for FW_OK or FW_ERR[0m
+[0;32mI (168358) http_server: Received FW_OK - STM32 accepted the length[0m
+[0;32mI (168358) http_server: Step 5: Starting firmware data transmission[0m
+[0;32mI (168378) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168378) http_server: Received expected response: 5[0m
+[0;32mI (168388) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168388) http_server: Received expected response: 5[0m
+[0;32mI (168398) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168398) http_server: Received expected response: 5[0m
+[0;32mI (168408) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168408) http_server: Received expected response: 5[0m
+[0;32mI (168418) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168418) http_server: Received expected response: 5[0m
+[0;32mI (168428) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168428) http_server: Received expected response: 5[0m
+[0;32mI (168438) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168438) http_server: Received expected response: 5[0m
+[0;32mI (168448) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168448) http_server: Received expected response: 5[0m
+[0;32mI (168448) http_server: Progress: 2% (64/2900 bytes) - Byte 64 completed[0m
+[0;32mI (168468) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168468) http_server: Received expected response: 5[0m
+[0;32mI (168478) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168478) http_server: Received expected response: 5[0m
+[0;32mI (168488) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168488) http_server: Received expected response: 5[0m
+[0;32mI (168498) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168498) http_server: Received expected response: 5[0m
+[0;32mI (168508) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168508) http_server: Received expected response: 5[0m
+[0;32mI (168518) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168518) http_server: Received expected response: 5[0m
+[0;32mI (168528) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168528) http_server: Received expected response: 5[0m
+[0;32mI (168538) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168538) http_server: Received expected response: 5[0m
+[0;32mI (168538) http_server: Progress: 4% (128/2900 bytes) - Byte 128 completed[0m
+[0;32mI (168558) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168558) http_server: Received expected response: 5[0m
+[0;32mI (168568) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168568) http_server: Received expected response: 5[0m
+[0;32mI (168578) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168578) http_server: Received expected response: 5[0m
+[0;32mI (168588) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168588) http_server: Received expected response: 5[0m
+[0;32mI (168598) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168598) http_server: Received expected response: 5[0m
+[0;32mI (168608) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168608) http_server: Received expected response: 5[0m
+[0;32mI (168618) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168618) http_server: Received expected response: 5[0m
+[0;32mI (168628) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168628) http_server: Received expected response: 5[0m
+[0;32mI (168628) http_server: Progress: 6% (192/2900 bytes) - Byte 192 completed[0m
+[0;32mI (168648) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168648) http_server: Received expected response: 5[0m
+[0;32mI (168658) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168658) http_server: Received expected response: 5[0m
+[0;32mI (168668) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168668) http_server: Received expected response: 5[0m
+[0;32mI (168678) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168678) http_server: Received expected response: 5[0m
+[0;32mI (168688) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168688) http_server: Received expected response: 5[0m
+[0;32mI (168698) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168698) http_server: Received expected response: 5[0m
+[0;32mI (168708) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168708) http_server: Received expected response: 5[0m
+[0;32mI (168718) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168718) http_server: Received expected response: 5[0m
+[0;32mI (168718) http_server: Progress: 8% (256/2900 bytes) - Byte 256 completed[0m
+[0;32mI (168738) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168738) http_server: Received expected response: 5[0m
+[0;32mI (168748) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168748) http_server: Received expected response: 5[0m
+[0;32mI (168758) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168758) http_server: Received expected response: 5[0m
+[0;32mI (168768) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168768) http_server: Received expected response: 5[0m
+[0;32mI (168778) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168778) http_server: Received expected response: 5[0m
+[0;32mI (168788) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168788) http_server: Received expected response: 5[0m
+[0;32mI (168798) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168798) http_server: Received expected response: 5[0m
+[0;32mI (168808) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168808) http_server: Received expected response: 5[0m
+[0;32mI (168808) http_server: Progress: 11% (320/2900 bytes) - Byte 320 completed[0m
+[0;32mI (168828) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168828) http_server: Received expected response: 5[0m
+[0;32mI (168838) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168838) http_server: Received expected response: 5[0m
+[0;32mI (168848) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168848) http_server: Received expected response: 5[0m
+[0;32mI (168858) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168858) http_server: Received expected response: 5[0m
+[0;32mI (168868) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168868) http_server: Received expected response: 5[0m
+[0;32mI (168878) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168878) http_server: Received expected response: 5[0m
+[0;32mI (168888) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168888) http_server: Received expected response: 5[0m
+[0;32mI (168898) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168898) http_server: Received expected response: 5[0m
+[0;32mI (168898) http_server: Progress: 13% (384/2900 bytes) - Byte 384 completed[0m
+[0;32mI (168918) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168918) http_server: Received expected response: 5[0m
+[0;32mI (168928) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168928) http_server: Received expected response: 5[0m
+[0;32mI (168938) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168938) http_server: Received expected response: 5[0m
+[0;32mI (168948) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168948) http_server: Received expected response: 5[0m
+[0;32mI (168958) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168958) http_server: Received expected response: 5[0m
+[0;32mI (168968) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168968) http_server: Received expected response: 5[0m
+[0;32mI (168978) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168978) http_server: Received expected response: 5[0m
+[0;32mI (168988) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168988) http_server: Received expected response: 5[0m
+[0;32mI (168988) http_server: Progress: 15% (448/2900 bytes) - Byte 448 completed[0m
+[0;32mI (168998) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (168998) http_server: Received expected response: 5[0m
+[0;32mI (169018) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169018) http_server: Received expected response: 5[0m
+[0;32mI (169028) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169028) http_server: Received expected response: 5[0m
+[0;32mI (169038) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169038) http_server: Received expected response: 5[0m
+[0;32mI (169048) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169048) http_server: Received expected response: 5[0m
+[0;32mI (169058) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169058) http_server: Received expected response: 5[0m
+[0;32mI (169068) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169068) http_server: Received expected response: 5[0m
+[0;32mI (169078) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169078) http_server: Received expected response: 5[0m
+[0;32mI (169078) http_server: Progress: 17% (512/2900 bytes) - Byte 512 completed[0m
+[0;32mI (169088) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169088) http_server: Received expected response: 5[0m
+[0;32mI (169098) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169098) http_server: Received expected response: 5[0m
+[0;32mI (169108) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169108) http_server: Received expected response: 5[0m
+[0;32mI (169128) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169128) http_server: Received expected response: 5[0m
+[0;32mI (169138) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169138) http_server: Received expected response: 5[0m
+[0;32mI (169148) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169148) http_server: Received expected response: 5[0m
+[0;32mI (169158) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169158) http_server: Received expected response: 5[0m
+[0;32mI (169168) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169168) http_server: Received expected response: 5[0m
+[0;32mI (169168) http_server: Progress: 19% (576/2900 bytes) - Byte 576 completed[0m
+[0;32mI (169178) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169178) http_server: Received expected response: 5[0m
+[0;32mI (169188) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169188) http_server: Received expected response: 5[0m
+[0;32mI (169198) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169198) http_server: Received expected response: 5[0m
+[0;32mI (169208) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169208) http_server: Received expected response: 5[0m
+[0;32mI (169218) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169218) http_server: Received expected response: 5[0m
+[0;32mI (169238) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169238) http_server: Received expected response: 5[0m
+[0;32mI (169248) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169248) http_server: Received expected response: 5[0m
+[0;32mI (169258) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169258) http_server: Received expected response: 5[0m
+[0;32mI (169258) http_server: Progress: 22% (640/2900 bytes) - Byte 640 completed[0m
+[0;32mI (169268) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169268) http_server: Received expected response: 5[0m
+[0;32mI (169278) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169278) http_server: Received expected response: 5[0m
+[0;32mI (169288) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169288) http_server: Received expected response: 5[0m
+[0;32mI (169298) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169298) http_server: Received expected response: 5[0m
+[0;32mI (169308) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169308) http_server: Received expected response: 5[0m
+[0;32mI (169318) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169318) http_server: Received expected response: 5[0m
+[0;32mI (169328) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169328) http_server: Received expected response: 5[0m
+[0;32mI (169348) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169348) http_server: Received expected response: 5[0m
+[0;32mI (169348) http_server: Progress: 24% (704/2900 bytes) - Byte 704 completed[0m
+[0;32mI (169358) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169358) http_server: Received expected response: 5[0m
+[0;32mI (169368) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169368) http_server: Received expected response: 5[0m
+[0;32mI (169378) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169378) http_server: Received expected response: 5[0m
+[0;32mI (169388) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169388) http_server: Received expected response: 5[0m
+[0;32mI (169398) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169398) http_server: Received expected response: 5[0m
+[0;32mI (169408) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169408) http_server: Received expected response: 5[0m
+[0;32mI (169418) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169418) http_server: Received expected response: 5[0m
+[0;32mI (169428) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169428) http_server: Received expected response: 5[0m
+[0;32mI (169428) http_server: Progress: 26% (768/2900 bytes) - Byte 768 completed[0m
+[0;32mI (169448) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169448) http_server: Received expected response: 5[0m
+[0;32mI (169458) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169458) http_server: Received expected response: 5[0m
+[0;32mI (169468) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169468) http_server: Received expected response: 5[0m
+[0;32mI (169478) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169478) http_server: Received expected response: 5[0m
+[0;32mI (169488) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169488) http_server: Received expected response: 5[0m
+[0;32mI (169498) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169498) http_server: Received expected response: 5[0m
+[0;32mI (169508) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169508) http_server: Received expected response: 5[0m
+[0;32mI (169518) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169518) http_server: Received expected response: 5[0m
+[0;32mI (169518) http_server: Progress: 28% (832/2900 bytes) - Byte 832 completed[0m
+[0;32mI (169538) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169538) http_server: Received expected response: 5[0m
+[0;32mI (169548) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169548) http_server: Received expected response: 5[0m
+[0;32mI (169558) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169558) http_server: Received expected response: 5[0m
+[0;32mI (169568) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169568) http_server: Received expected response: 5[0m
+[0;32mI (169578) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169578) http_server: Received expected response: 5[0m
+[0;32mI (169588) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169588) http_server: Received expected response: 5[0m
+[0;32mI (169598) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169598) http_server: Received expected response: 5[0m
+[0;32mI (169608) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169608) http_server: Received expected response: 5[0m
+[0;32mI (169608) http_server: Progress: 30% (896/2900 bytes) - Byte 896 completed[0m
+[0;32mI (169628) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169628) http_server: Received expected response: 5[0m
+[0;32mI (169638) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169638) http_server: Received expected response: 5[0m
+[0;32mI (169648) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169648) http_server: Received expected response: 5[0m
+[0;32mI (169658) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169658) http_server: Received expected response: 5[0m
+[0;32mI (169668) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169668) http_server: Received expected response: 5[0m
+[0;32mI (169678) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169678) http_server: Received expected response: 5[0m
+[0;32mI (169688) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169688) http_server: Received expected response: 5[0m
+[0;32mI (169698) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169698) http_server: Received expected response: 5[0m
+[0;32mI (169698) http_server: Progress: 33% (960/2900 bytes) - Byte 960 completed[0m
+[0;32mI (169718) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169718) http_server: Received expected response: 5[0m
+[0;32mI (169728) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169728) http_server: Received expected response: 5[0m
+[0;32mI (169738) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169738) http_server: Received expected response: 5[0m
+[0;32mI (169748) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169748) http_server: Received expected response: 5[0m
+[0;32mI (169758) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169758) http_server: Received expected response: 5[0m
+[0;32mI (169768) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169768) http_server: Received expected response: 5[0m
+[0;32mI (169778) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169778) http_server: Received expected response: 5[0m
+[0;32mI (169788) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169788) http_server: Received expected response: 5[0m
+[0;32mI (169788) http_server: Progress: 35% (1024/2900 bytes) - Byte 1024 completed[0m
+[0;32mI (169808) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169808) http_server: Received expected response: 5[0m
+[0;32mI (169818) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169818) http_server: Received expected response: 5[0m
+[0;32mI (169828) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169828) http_server: Received expected response: 5[0m
+[0;32mI (169838) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169838) http_server: Received expected response: 5[0m
+[0;32mI (169848) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169848) http_server: Received expected response: 5[0m
+[0;32mI (169858) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169858) http_server: Received expected response: 5[0m
+[0;32mI (169868) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169868) http_server: Received expected response: 5[0m
+[0;32mI (169878) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169878) http_server: Received expected response: 5[0m
+[0;32mI (169878) http_server: Progress: 37% (1088/2900 bytes) - Byte 1088 completed[0m
+[0;32mI (169898) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169898) http_server: Received expected response: 5[0m
+[0;32mI (169908) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169908) http_server: Received expected response: 5[0m
+[0;32mI (169918) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169918) http_server: Received expected response: 5[0m
+[0;32mI (169928) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169928) http_server: Received expected response: 5[0m
+[0;32mI (169938) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169938) http_server: Received expected response: 5[0m
+[0;32mI (169948) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169948) http_server: Received expected response: 5[0m
+[0;32mI (169958) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169958) http_server: Received expected response: 5[0m
+[0;32mI (169968) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169968) http_server: Received expected response: 5[0m
+[0;32mI (169968) http_server: Progress: 39% (1152/2900 bytes) - Byte 1152 completed[0m
+[0;32mI (169988) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169988) http_server: Received expected response: 5[0m
+[0;32mI (169998) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (169998) http_server: Received expected response: 5[0m
+[0;32mI (170008) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170008) http_server: Received expected response: 5[0m
+[0;32mI (170018) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170018) http_server: Received expected response: 5[0m
+[0;32mI (170028) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170028) http_server: Received expected response: 5[0m
+[0;32mI (170038) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170038) http_server: Received expected response: 5[0m
+[0;32mI (170048) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170048) http_server: Received expected response: 5[0m
+[0;32mI (170058) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170058) http_server: Received expected response: 5[0m
+[0;32mI (170058) http_server: Progress: 41% (1216/2900 bytes) - Byte 1216 completed[0m
+[0;32mI (170078) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170078) http_server: Received expected response: 5[0m
+[0;32mI (170088) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170088) http_server: Received expected response: 5[0m
+[0;32mI (170098) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170098) http_server: Received expected response: 5[0m
+[0;32mI (170108) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170108) http_server: Received expected response: 5[0m
+[0;32mI (170118) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170118) http_server: Received expected response: 5[0m
+[0;32mI (170128) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170128) http_server: Received expected response: 5[0m
+[0;32mI (170138) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170138) http_server: Received expected response: 5[0m
+[0;32mI (170148) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170148) http_server: Received expected response: 5[0m
+[0;32mI (170148) http_server: Progress: 44% (1280/2900 bytes) - Byte 1280 completed[0m
+[0;32mI (170168) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170168) http_server: Received expected response: 5[0m
+[0;32mI (170178) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170178) http_server: Received expected response: 5[0m
+[0;32mI (170188) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170188) http_server: Received expected response: 5[0m
+[0;32mI (170198) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170198) http_server: Received expected response: 5[0m
+[0;32mI (170208) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170208) http_server: Received expected response: 5[0m
+[0;32mI (170218) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170218) http_server: Received expected response: 5[0m
+[0;32mI (170228) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170228) http_server: Received expected response: 5[0m
+[0;32mI (170238) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170238) http_server: Received expected response: 5[0m
+[0;32mI (170238) http_server: Progress: 46% (1344/2900 bytes) - Byte 1344 completed[0m
+[0;32mI (170258) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170258) http_server: Received expected response: 5[0m
+[0;32mI (170268) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170268) http_server: Received expected response: 5[0m
+[0;32mI (170278) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170278) http_server: Received expected response: 5[0m
+[0;32mI (170288) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170288) http_server: Received expected response: 5[0m
+[0;32mI (170298) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170298) http_server: Received expected response: 5[0m
+[0;32mI (170308) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170308) http_server: Received expected response: 5[0m
+[0;32mI (170318) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170318) http_server: Received expected response: 5[0m
+[0;32mI (170328) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170328) http_server: Received expected response: 5[0m
+[0;32mI (170328) http_server: Progress: 48% (1408/2900 bytes) - Byte 1408 completed[0m
+[0;32mI (170348) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170348) http_server: Received expected response: 5[0m
+[0;32mI (170358) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170358) http_server: Received expected response: 5[0m
+[0;32mI (170368) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170368) http_server: Received expected response: 5[0m
+[0;32mI (170378) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170378) http_server: Received expected response: 5[0m
+[0;32mI (170388) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170388) http_server: Received expected response: 5[0m
+[0;32mI (170398) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170398) http_server: Received expected response: 5[0m
+[0;32mI (170408) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170408) http_server: Received expected response: 5[0m
+[0;32mI (170418) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170418) http_server: Received expected response: 5[0m
+[0;32mI (170418) http_server: Progress: 50% (1472/2900 bytes) - Byte 1472 completed[0m
+[0;32mI (170438) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170438) http_server: Received expected response: 5[0m
+[0;32mI (170448) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170448) http_server: Received expected response: 5[0m
+[0;32mI (170458) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170458) http_server: Received expected response: 5[0m
+[0;32mI (170468) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170468) http_server: Received expected response: 5[0m
+[0;32mI (170478) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170478) http_server: Received expected response: 5[0m
+[0;32mI (170488) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170488) http_server: Received expected response: 5[0m
+[0;32mI (170498) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170498) http_server: Received expected response: 5[0m
+[0;32mI (170508) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170508) http_server: Received expected response: 5[0m
+[0;32mI (170508) http_server: Progress: 52% (1536/2900 bytes) - Byte 1536 completed[0m
+[0;32mI (170518) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170518) http_server: Received expected response: 5[0m
+[0;32mI (170538) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170538) http_server: Received expected response: 5[0m
+[0;32mI (170548) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170548) http_server: Received expected response: 5[0m
+[0;32mI (170558) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170558) http_server: Received expected response: 5[0m
+[0;32mI (170568) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170568) http_server: Received expected response: 5[0m
+[0;32mI (170578) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170578) http_server: Received expected response: 5[0m
+[0;32mI (170588) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170588) http_server: Received expected response: 5[0m
+[0;32mI (170598) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170598) http_server: Received expected response: 5[0m
+[0;32mI (170598) http_server: Progress: 55% (1600/2900 bytes) - Byte 1600 completed[0m
+[0;32mI (170618) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170618) http_server: Received expected response: 5[0m
+[0;32mI (170628) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170628) http_server: Received expected response: 5[0m
+[0;32mI (170638) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170638) http_server: Received expected response: 5[0m
+[0;32mI (170648) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170648) http_server: Received expected response: 5[0m
+[0;32mI (170658) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170658) http_server: Received expected response: 5[0m
+[0;32mI (170668) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170668) http_server: Received expected response: 5[0m
+[0;32mI (170678) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170678) http_server: Received expected response: 5[0m
+[0;32mI (170688) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170688) http_server: Received expected response: 5[0m
+[0;32mI (170688) http_server: Progress: 57% (1664/2900 bytes) - Byte 1664 completed[0m
+[0;32mI (170708) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170708) http_server: Received expected response: 5[0m
+[0;32mI (170718) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170718) http_server: Received expected response: 5[0m
+[0;32mI (170728) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170728) http_server: Received expected response: 5[0m
+[0;32mI (170738) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170738) http_server: Received expected response: 5[0m
+[0;32mI (170748) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170748) http_server: Received expected response: 5[0m
+[0;32mI (170758) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170758) http_server: Received expected response: 5[0m
+[0;32mI (170768) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170768) http_server: Received expected response: 5[0m
+[0;32mI (170778) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170778) http_server: Received expected response: 5[0m
+[0;32mI (170778) http_server: Progress: 59% (1728/2900 bytes) - Byte 1728 completed[0m
+[0;32mI (170798) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170798) http_server: Received expected response: 5[0m
+[0;32mI (170808) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170808) http_server: Received expected response: 5[0m
+[0;32mI (170818) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170818) http_server: Received expected response: 5[0m
+[0;32mI (170828) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170828) http_server: Received expected response: 5[0m
+[0;32mI (170838) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170838) http_server: Received expected response: 5[0m
+[0;32mI (170848) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170848) http_server: Received expected response: 5[0m
+[0;32mI (170858) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170858) http_server: Received expected response: 5[0m
+[0;32mI (170868) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170868) http_server: Received expected response: 5[0m
+[0;32mI (170868) http_server: Progress: 61% (1792/2900 bytes) - Byte 1792 completed[0m
+[0;32mI (170878) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170878) http_server: Received expected response: 5[0m
+[0;32mI (170898) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170898) http_server: Received expected response: 5[0m
+[0;32mI (170908) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170908) http_server: Received expected response: 5[0m
+[0;32mI (170918) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170918) http_server: Received expected response: 5[0m
+[0;32mI (170928) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170928) http_server: Received expected response: 5[0m
+[0;32mI (170938) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170938) http_server: Received expected response: 5[0m
+[0;32mI (170948) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170948) http_server: Received expected response: 5[0m
+[0;32mI (170958) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170958) http_server: Received expected response: 5[0m
+[0;32mI (170958) http_server: Progress: 64% (1856/2900 bytes) - Byte 1856 completed[0m
+[0;32mI (170968) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170968) http_server: Received expected response: 5[0m
+[0;32mI (170978) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170978) http_server: Received expected response: 5[0m
+[0;32mI (170998) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (170998) http_server: Received expected response: 5[0m
+[0;32mI (171008) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171008) http_server: Received expected response: 5[0m
+[0;32mI (171018) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171018) http_server: Received expected response: 5[0m
+[0;32mI (171028) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171028) http_server: Received expected response: 5[0m
+[0;32mI (171038) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171038) http_server: Received expected response: 5[0m
+[0;32mI (171048) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171048) http_server: Received expected response: 5[0m
+[0;32mI (171048) http_server: Progress: 66% (1920/2900 bytes) - Byte 1920 completed[0m
+[0;32mI (171058) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171058) http_server: Received expected response: 5[0m
+[0;32mI (171068) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171068) http_server: Received expected response: 5[0m
+[0;32mI (171078) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171078) http_server: Received expected response: 5[0m
+[0;32mI (171088) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171088) http_server: Received expected response: 5[0m
+[0;32mI (171108) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171108) http_server: Received expected response: 5[0m
+[0;32mI (171118) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171118) http_server: Received expected response: 5[0m
+[0;32mI (171128) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171128) http_server: Received expected response: 5[0m
+[0;32mI (171138) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171138) http_server: Received expected response: 5[0m
+[0;32mI (171138) http_server: Progress: 68% (1984/2900 bytes) - Byte 1984 completed[0m
+[0;32mI (171148) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171148) http_server: Received expected response: 5[0m
+[0;32mI (171158) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171158) http_server: Received expected response: 5[0m
+[0;32mI (171168) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171168) http_server: Received expected response: 5[0m
+[0;32mI (171178) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171178) http_server: Received expected response: 5[0m
+[0;32mI (171188) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171188) http_server: Received expected response: 5[0m
+[0;32mI (171208) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171208) http_server: Received expected response: 5[0m
+[0;32mI (171218) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171218) http_server: Received expected response: 5[0m
+[0;32mI (171228) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171228) http_server: Received expected response: 5[0m
+[0;32mI (171228) http_server: Progress: 70% (2048/2900 bytes) - Byte 2048 completed[0m
+[0;32mI (171238) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171238) http_server: Received expected response: 5[0m
+[0;32mI (171248) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171248) http_server: Received expected response: 5[0m
+[0;32mI (171258) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171258) http_server: Received expected response: 5[0m
+[0;32mI (171268) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171268) http_server: Received expected response: 5[0m
+[0;32mI (171278) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171278) http_server: Received expected response: 5[0m
+[0;32mI (171288) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171288) http_server: Received expected response: 5[0m
+[0;32mI (171298) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171298) http_server: Received expected response: 5[0m
+[0;32mI (171318) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171318) http_server: Received expected response: 5[0m
+[0;32mI (171318) http_server: Progress: 72% (2112/2900 bytes) - Byte 2112 completed[0m
+[0;32mI (171328) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171328) http_server: Received expected response: 5[0m
+[0;32mI (171338) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171338) http_server: Received expected response: 5[0m
+[0;32mI (171348) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171348) http_server: Received expected response: 5[0m
+[0;32mI (171358) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171358) http_server: Received expected response: 5[0m
+[0;32mI (171368) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171368) http_server: Received expected response: 5[0m
+[0;32mI (171378) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171378) http_server: Received expected response: 5[0m
+[0;32mI (171388) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171388) http_server: Received expected response: 5[0m
+[0;32mI (171398) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171398) http_server: Received expected response: 5[0m
+[0;32mI (171408) http_server: Progress: 75% (2176/2900 bytes) - Byte 2176 completed[0m
+[0;32mI (171418) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171418) http_server: Received expected response: 5[0m
+[0;32mI (171428) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171428) http_server: Received expected response: 5[0m
+[0;32mI (171438) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171438) http_server: Received expected response: 5[0m
+[0;32mI (171448) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171448) http_server: Received expected response: 5[0m
+[0;32mI (171458) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171458) http_server: Received expected response: 5[0m
+[0;32mI (171468) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171468) http_server: Received expected response: 5[0m
+[0;32mI (171478) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171478) http_server: Received expected response: 5[0m
+[0;32mI (171498) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171498) http_server: Received expected response: 5[0m
+[0;32mI (171498) http_server: Progress: 77% (2240/2900 bytes) - Byte 2240 completed[0m
+[0;32mI (171508) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171508) http_server: Received expected response: 5[0m
+[0;32mI (171518) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171518) http_server: Received expected response: 5[0m
+[0;32mI (171528) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171528) http_server: Received expected response: 5[0m
+[0;32mI (171538) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171538) http_server: Received expected response: 5[0m
+[0;32mI (171548) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171548) http_server: Received expected response: 5[0m
+[0;32mI (171568) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171568) http_server: Received expected response: 5[0m
+[0;32mI (171578) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171578) http_server: Received expected response: 5[0m
+[0;32mI (171588) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171588) http_server: Received expected response: 5[0m
+[0;32mI (171588) http_server: Progress: 79% (2304/2900 bytes) - Byte 2304 completed[0m
+[0;32mI (171608) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171608) http_server: Received expected response: 5[0m
+[0;32mI (171618) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171618) http_server: Received expected response: 5[0m
+[0;32mI (171628) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171628) http_server: Received expected response: 5[0m
+[0;32mI (171638) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171638) http_server: Received expected response: 5[0m
+[0;32mI (171648) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171648) http_server: Received expected response: 5[0m
+[0;32mI (171658) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171658) http_server: Received expected response: 5[0m
+[0;32mI (171668) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;32mI (171668) http_server: Received expected response: 5[0m
+

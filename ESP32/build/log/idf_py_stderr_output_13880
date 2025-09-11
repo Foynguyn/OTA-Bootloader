@@ -1,0 +1,108 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400e3b3e: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/task_wdt/task_wdt.c:434
+--- 0x400e3f00: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x400835d1: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x400d6ca8: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/esp32/include/hal/uart_ll.h:428
+---  (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/src/uart_vfs.c:190
+--- 0x400d73d3: uart_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x400da362: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4000bd83: _write_r in ROM
+--- 0x4000182a: write in ROM
+--- 0x400d98cd: console_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/vfs_console.c:71
+--- 0x400da362: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4000bd83: _write_r in ROM
+--- 0x4000117d: __swrite in ROM
+--- 0x400592fe: __sflush_r in ROM
+--- 0x4005937a: _fflush_r in ROM
+--- 0x40151159: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x4015839b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x40157db2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+--- 0x401516b5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40165889: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40090e41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400db936: wait_for_response_byte at D:/esp32_to_stm32/main/http_server.c:300 (discriminator 1)
+--- 0x400dc311: http_server_download_handler at D:/esp32_to_stm32/main/http_server.c:999
+--- 0x4010121f: httpd_uri at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_uri.c:331
+--- 0x40101a95: httpd_parse_req at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_parse.c:663
+--- 0x40101b29: httpd_req_new at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_parse.c:791
+--- 0x40100994: httpd_sess_process at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_sess.c:427
+--- 0x400ffbc2: httpd_process_session at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:267
+--- 0x4015f063: httpd_sess_enum at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+--- 0x40100394: httpd_server at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:317
+--- 0x40100402: httpd_thread at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:339
+--- 0x4008b131: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400e3b3e: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/task_wdt/task_wdt.c:434
+--- 0x400e3f00: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x400835d1: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x400d6c99: uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/src/uart_vfs.c:188
+--- 0x400d73d3: uart_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x400da362: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4000bd83: _write_r in ROM
+--- 0x4000182a: write in ROM
+--- 0x400d98cd: console_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/vfs_console.c:71
+--- 0x400da362: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4000bd83: _write_r in ROM
+--- 0x4000117d: __swrite in ROM
+--- 0x400592fe: __sflush_r in ROM
+--- 0x4005937a: _fflush_r in ROM
+--- 0x40151159: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x4015839b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x40157db2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+--- 0x401516b5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40165889: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40090e41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400db936: wait_for_response_byte at D:/esp32_to_stm32/main/http_server.c:300 (discriminator 1)
+--- 0x400dc311: http_server_download_handler at D:/esp32_to_stm32/main/http_server.c:999
+--- 0x4010121f: httpd_uri at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_uri.c:331
+--- 0x40101a95: httpd_parse_req at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_parse.c:663
+--- 0x40101b29: httpd_req_new at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_parse.c:791
+--- 0x40100994: httpd_sess_process at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_sess.c:427
+--- 0x400ffbc2: httpd_process_session at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:267
+--- 0x4015f063: httpd_sess_enum at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+--- 0x40100394: httpd_server at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:317
+--- 0x40100402: httpd_thread at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:339
+--- 0x4008b131: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x400e3b3e: task_wdt_timeout_handling at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/task_wdt/task_wdt.c:434
+--- 0x400e3f00: task_wdt_isr at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_system/task_wdt/task_wdt.c:507
+--- 0x400835d1: _xt_lowint1 at C:/Espressif/frameworks/esp-idf-v5.4.1/components/xtensa/xtensa_vectors.S:1240
+--- 0x400d6cab: uart_ll_get_txfifo_len at C:/Espressif/frameworks/esp-idf-v5.4.1/components/hal/esp32/include/hal/uart_ll.h:428
+---  (inlined by) uart_tx_char at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/src/uart_vfs.c:190
+--- 0x400d73d3: uart_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x400da362: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4000bd83: _write_r in ROM
+--- 0x4000182a: write in ROM
+--- 0x400d98cd: console_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_vfs_console/vfs_console.c:71
+--- 0x400da362: esp_vfs_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x4000bd83: _write_r in ROM
+--- 0x4000117d: __swrite in ROM
+--- 0x400592fe: __sflush_r in ROM
+--- 0x4005937a: _fflush_r in ROM
+--- 0x40151159: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x4015839b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x40157db2: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+--- 0x401516b5: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x40165889: esp_log_writev at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:34
+--- 0x40090e41: esp_log_write at C:/Espressif/frameworks/esp-idf-v5.4.1/components/log/src/os/log_write.c:44
+--- 0x400db936: wait_for_response_byte at D:/esp32_to_stm32/main/http_server.c:300 (discriminator 1)
+--- 0x400dc311: http_server_download_handler at D:/esp32_to_stm32/main/http_server.c:999
+--- 0x4010121f: httpd_uri at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_uri.c:331
+--- 0x40101a95: httpd_parse_req at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_parse.c:663
+--- 0x40101b29: httpd_req_new at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_parse.c:791
+--- 0x40100994: httpd_sess_process at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_sess.c:427
+--- 0x400ffbc2: httpd_process_session at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:267
+--- 0x4015f063: httpd_sess_enum at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_sess.c:50 (discriminator 1)
+--- 0x40100394: httpd_server at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:317
+--- 0x40100402: httpd_thread at C:/Espressif/frameworks/esp-idf-v5.4.1/components/esp_http_server/src/httpd_main.c:339
+--- 0x4008b131: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.4.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

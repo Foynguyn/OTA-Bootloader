@@ -1,0 +1,178 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET)�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 26 2025 16:49:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 001c0000[0m
+[0;32mI (80) boot:  3 spiffs           Unknown data     01 82 001d0000 00200000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20158h (131416) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=00030180 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=000301a4 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=000340ac vaddr=40080000 size=0bf6ch ( 49004) load[0m
+[0;32mI (172) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=96cb4h (617652) map[0m
+[0;32mI (384) esp_image: segment 5: paddr=000d6cdc vaddr=4008bf6c size=0c858h ( 51288) load[0m
+[0;32mI (415) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (415) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (434) cpu_start: Pro cpu start user code[0m
+[0;32mI (434) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (434) app_init: Application information:[0m
+[0;32mI (434) app_init: Project name:     softap_sta[0m
+[0;32mI (439) app_init: App version:      1[0m
+[0;32mI (442) app_init: Compile time:     Aug 26 2025 16:49:03[0m
+[0;32mI (447) app_init: ELF file SHA256:  f82f5bcd0...[0m
+[0;32mI (451) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (456) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (460) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (463) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (468) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (489) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (495) heap_init: At 400987C4 len 0000783C (30 KiB): IRAM[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (504) spi_flash: flash io: dio[0m
+[0;32mI (508) main_task: Started on CPU0[0m
+[0;32mI (518) main_task: Calling app_main()[0m
+[0;32mI (538) http_server: Initializing SPIFFS[0m
+[0;32mI (678) http_server: Partition size: total:1920401, used:2510[0m
+[0;32mI (688) http_server: UART initialized for STM32 communication[0m
+[0;32mI (688) wifi_app: Starting WiFi application...[0m
+[0;32mI (688) main_task: Returned from app_main()[0m
+[0;32mI (708) wifi_init: rx ba win: 6[0m
+[0;32mI (708) wifi_init: accept mbox: 6[0m
+[0;32mI (708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (708) wifi_init: udp mbox: 6[0m
+[0;32mI (708) wifi_init: tcp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp tx win: 5760[0m
+[0;32mI (718) wifi_init: tcp rx win: 5760[0m
+[0;32mI (718) wifi_init: tcp mss: 1440[0m
+[0;32mI (728) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (728) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (978) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1078) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1078) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1078) http_server: http server config: Port: '80', task priority: '4'[0m
+[0;32mI (1078) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1088) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+[0;32mI (1098) http_server: http server config: Register URI handlers[0m
+[0;32mI (147558) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (147628) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (188258) http_server: index.html requested[0m
+[0;32mI (188298) http_server: style.css requested[0m
+[0;32mI (188308) http_server: script.js requested[0m
+[0;33mW (188808) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (188808) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (200948) http_server: index.html requested[0m
+[0;32mI (200988) http_server: style.css requested[0m
+[0;32mI (201008) http_server: script.js requested[0m
+[0;32mI (208858) http_server: Firmware upload started[0m
+[0;32mI (208858) http_server: Content length: 2380 bytes[0m
+[0;32mI (208868) http_server: Content starts at position: 162[0m
+[0;32mI (208878) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (208918) http_server: Wrote 1885 bytes from first chunk[0m
+[0;32mI (208928) http_server: Upload progress: 100% (2380/2380 bytes)[0m
+[0;32mI (208928) http_server: Raw upload completed. Now cleaning up multipart boundaries...[0m
+[0;32mI (208928) http_server: Searching for multipart boundary in 2218 bytes...[0m
+[0;32mI (208938) http_server: Last 100 bytes before cleanup:[0m
+[98]G[01]6[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08][0D][0A]------WebKitFormBoundaryTM58or7v0pKBB8TM--[0D][0A]
+[0;32mI (208958) http_server: Found boundary pattern at position 2174[0m
+[0;32mI (208968) http_server: Boundary line starts at position 2174[0m
+[0;32mI (208968) http_server: Clean file size after boundary removal: 2174 bytes (was 2218)[0m
+[0;32mI (208978) http_server: Final clean file size after whitespace removal: 2172 bytes[0m
+[0;32mI (208988) http_server: Final clean file size: 2172 bytes[0m
+[0;32mI (208988) http_server: Last 50 bytes of cleaned file:[0m
+[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08]
+[0;32mI (209048) http_server: File upload completed successfully. Clean file size: 2172 bytes[0m
+[0;32mI (209048) http_server: Firmware upload and processing completed successfully[0m
+[0;32mI (209058) http_server: HTTP_MSG_OTA_UPDATE_SUCCESSFULL[0m
+[0;32mI (212038) http_server: Firmware download to STM32 started with protocol[0m
+[0;32mI (212038) http_server: Firmware file size: 2172 bytes[0m
+[0;32mI (212038) http_server: Firmware checksum: 0x000000C1[0m
+[0;32mI (212048) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[1;31mE (212148) http_server: Step 2 failed: did not receive FW_OK after FW_LENGTH[0m
+[0;33mW (212148) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - No FW_OK after FW_LENGTH[0m
+[0;33mW (212158) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (264568) http_server: index.html requested[0m
+[0;32mI (264608) http_server: style.css requested[0m
+[0;32mI (264618) http_server: script.js requested[0m
+[0;32mI (271218) http_server: Firmware upload started[0m
+[0;32mI (271218) http_server: Content length: 2380 bytes[0m
+[0;32mI (271218) http_server: Content starts at position: 162[0m
+[0;32mI (271218) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (271238) http_server: Wrote 1885 bytes from first chunk[0m
+[0;32mI (271258) http_server: Upload progress: 100% (2380/2380 bytes)[0m
+[0;32mI (271258) http_server: Raw upload completed. Now cleaning up multipart boundaries...[0m
+[0;32mI (271268) http_server: Searching for multipart boundary in 2218 bytes...[0m
+[0;32mI (271268) http_server: Last 100 bytes before cleanup:[0m
+[98]G[01]6[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08][0D][0A]------WebKitFormBoundarycrU8kMkTLd6p1Rpj--[0D][0A]
+[0;32mI (271288) http_server: Found boundary pattern at position 2174[0m
+[0;32mI (271298) http_server: Boundary line starts at position 2174[0m
+[0;32mI (271308) http_server: Clean file size after boundary removal: 2174 bytes (was 2218)[0m
+[0;32mI (271318) http_server: Final clean file size after whitespace removal: 2172 bytes[0m
+[0;32mI (271318) http_server: Final clean file size: 2172 bytes[0m
+[0;32mI (271318) http_server: Last 50 bytes of cleaned file:[0m
+[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08]
+[0;32mI (271378) http_server: File upload completed successfully. Clean file size: 2172 bytes[0m
+[0;32mI (271378) http_server: Firmware upload and processing completed successfully[0m
+[0;32mI (271388) http_server: HTTP_MSG_OTA_UPDATE_SUCCESSFULL[0m
+[0;32mI (272428) http_server: Firmware download to STM32 started with protocol[0m
+[0;32mI (272428) http_server: Firmware file size: 2172 bytes[0m
+[0;32mI (272438) http_server: Firmware checksum: 0x000000C1[0m
+[0;32mI (272438) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[1;31mE (275538) http_server: Step 1 failed: did not receive FW_READY[0m
+[0;33mW (275538) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - No FW_READY from STM32[0m
+[0;33mW (275538) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (286248) http_server: index.html requested[0m
+[0;32mI (286278) http_server: style.css requested[0m
+[0;32mI (286288) http_server: script.js requested[0m
+[0;32mI (293638) http_server: Firmware upload started[0m
+[0;32mI (293638) http_server: Content length: 2380 bytes[0m
+[0;32mI (293638) http_server: Content starts at position: 162[0m
+[0;32mI (293638) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (293658) http_server: Wrote 1885 bytes from first chunk[0m
+[0;32mI (293678) http_server: Upload progress: 100% (2380/2380 bytes)[0m
+[0;32mI (293678) http_server: Raw upload completed. Now cleaning up multipart boundaries...[0m
+[0;32mI (293678) http_server: Searching for multipart boundary in 2218 bytes...[0m
+[0;32mI (293688) http_server: Last 100 bytes before cleanup:[0m
+[98]G[01]6[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08][0D][0A]------WebKitFormBoundary3ybM2B8kKkL6gAD7--[0D][0A]
+[0;32mI (293708) http_server: Found boundary pattern at position 2174[0m
+[0;32mI (293718) http_server: Boundary line starts at position 2174[0m
+[0;32mI (293718) http_server: Clean file size after boundary removal: 2174 bytes (was 2218)[0m
+[0;32mI (293728) http_server: Final clean file size after whitespace removal: 2172 bytes[0m
+[0;32mI (293738) http_server: Final clean file size: 2172 bytes[0m
+[0;32mI (293738) http_server: Last 50 bytes of cleaned file:[0m
+[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08]
+[0;32mI (293798) http_server: File upload completed successfully. Clean file size: 2172 bytes[0m
+[0;32mI (293798) http_server: Firmware upload and processing completed successfully[0m
+[0;32mI (293808) http_server: HTTP_MSG_OTA_UPDATE_SUCCESSFULL[0m
+[0;32mI (295018) http_server: Firmware download to STM32 started with protocol[0m
+[0;32mI (295018) http_server: Firmware file size: 2172 bytes[0m
+[0;32mI (295028) http_server: Firmware checksum: 0x000000C1[0m
+[0;32mI (295028) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[1;31mE (298128) http_server: Step 1 failed: did not receive FW_READY[0m
+[0;33mW (298128) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - No FW_READY from STM32[0m
+[0;33mW (298138) httpd_uri: httpd_uri: uri handler execution failed[0m

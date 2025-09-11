@@ -1,0 +1,2 @@
+source D:/esp32_to_stm32/build/bootloader/gdbinit/symbols
+source D:/esp32_to_stm32/build/bootloader/gdbinit/connect

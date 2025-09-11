@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "*.json": "java",
+        "netdb.h": "c",
+        "wifi_app.h": "c",
+        "esp_task.h": "c",
+        "cstring": "c",
+        "esp_netif.h": "c",
+        "freertos.h": "c",
+        "esp_http_server.h": "c",
+        "http_server.h": "c",
+        "task.h": "c",
+        "esp_vfs.h": "c",
+        "esp_wifi.h": "c",
+        "stm32f103xx.h": "c",
+        "uart.h": "c",
+        "nvs_flash.h": "c"
+    },
+    "idf.flashType": "UART",
+    "idf.portWin": "COM8"
+}

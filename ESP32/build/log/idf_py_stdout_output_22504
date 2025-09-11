@@ -1,0 +1,921 @@
+),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 26 2025 16:49:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (40) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (67) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 001c0000[0m
+[0;32mI (80) boot:  3 spiffs           Unknown data     01 82 001d0000 00200000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=20508h (132360) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=00030530 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00030554 vaddr=3ffb0000 size=03f00h ( 16128) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=0003445c vaddr=40080000 size=0bbbch ( 48060) load[0m
+[0;32mI (172) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=96ed0h (618192) map[0m
+[0;32mI (384) esp_image: segment 5: paddr=000d6ef8 vaddr=4008bbbc size=0cc08h ( 52232) load[0m
+[0;32mI (416) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (416) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) app_init: Application information:[0m
+[0;32mI (435) app_init: Project name:     softap_sta[0m
+[0;32mI (439) app_init: App version:      1[0m
+[0;32mI (442) app_init: Compile time:     Aug 26 2025 16:49:03[0m
+[0;32mI (448) app_init: ELF file SHA256:  0e61b7ae6...[0m
+[0;32mI (452) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (456) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (460) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (464) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (468) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (474) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (479) heap_init: At 3FFB81E0 len 00027E20 (159 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (490) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (495) heap_init: At 400987C4 len 0000783C (30 KiB): IRAM[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (504) spi_flash: flash io: dio[0m
+[0;32mI (508) main_task: Started on CPU0[0m
+[0;32mI (518) main_task: Calling app_main()[0m
+[0;32mI (528) http_server: Initializing SPIFFS[0m
+[0;32mI (668) http_server: Partition size: total:1920401, used:21084[0m
+[0;32mI (668) http_server: UART initialized for STM32 communication[0m
+[0;32mI (668) wifi_app: Starting WiFi application...[0m
+[0;32mI (678) main_task: Returned from app_main()[0m
+[0;32mI (688) wifi_init: rx ba win: 6[0m
+[0;32mI (688) wifi_init: accept mbox: 6[0m
+[0;32mI (688) wifi_init: tcpip mbox: 32[0m
+[0;32mI (688) wifi_init: udp mbox: 6[0m
+[0;32mI (688) wifi_init: tcp mbox: 6[0m
+[0;32mI (698) wifi_init: tcp tx win: 5760[0m
+[0;32mI (698) wifi_init: tcp rx win: 5760[0m
+[0;32mI (698) wifi_init: tcp mss: 1440[0m
+[0;32mI (708) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (708) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (968) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1048) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1058) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1058) http_server: http server config: Port: '80', task priority: '4'[0m
+[0;32mI (1058) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1058) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+[0;32mI (1068) http_server: http server config: Register URI handlers[0m
+[0;32mI (6218) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (6248) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (6248) http_server: index.html requested[0m
+[0;32mI (6328) http_server: style.css requested[0m
+[0;32mI (6338) http_server: script.js requested[0m
+[0;32mI (11738) http_server: Firmware upload started[0m
+[0;32mI (11738) http_server: Content length: 2380 bytes[0m
+[0;32mI (11748) http_server: Content starts at position: 162[0m
+[0;32mI (11868) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (11978) http_server: Wrote 1885 bytes from first chunk[0m
+[0;32mI (11998) http_server: Upload progress: 100% (2380/2380 bytes)[0m
+[0;32mI (11998) http_server: Raw upload completed. Now cleaning up multipart boundaries...[0m
+[0;32mI (11998) http_server: Searching for multipart boundary in 2218 bytes...[0m
+[0;32mI (11998) http_server: Last 100 bytes before cleanup:[0m
+[98]G[01]6[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08][0D][0A]------WebKitFormBoundaryWNVmJ0We6UTuMtCV--[0D][0A]
+[0;32mI (12028) http_server: Found boundary pattern at position 2174[0m
+[0;32mI (12028) http_server: Boundary line starts at position 2174[0m
+[0;32mI (12038) http_server: Clean file size after boundary removal: 2174 bytes (was 2218)[0m
+[0;32mI (12048) http_server: Final clean file size after whitespace removal: 2172 bytes[0m
+[0;32mI (12048) http_server: Final clean file size: 2172 bytes[0m
+[0;32mI (12058) http_server: Last 50 bytes of cleaned file:[0m
+[F2][E7]t[08][00][08]t[08][00][08]t[08][00][08]x[08][00][08][F8][B5][00][BF][F8][BC][08][BC][9E]FpG[F8][B5][00][BF][F8][BC][08][BC][9E]FpGU[01][00][08]1[01][00][08]
+[0;32mI (12208) http_server: File upload completed successfully. Clean file size: 2172 bytes[0m
+[0;32mI (12208) http_server: Firmware upload and processing completed successfully[0m
+[0;32mI (12218) http_server: HTTP_MSG_OTA_UPDATE_SUCCESSFULL[0m
+[0;32mI (13978) http_server: Firmware download to STM32 started with protocol[0m
+[0;32mI (13978) http_server: Firmware file size: 2172 bytes[0m
+[0;32mI (13978) http_server: Firmware checksum: 0x000000C1[0m
+[0;32mI (13978) http_server: HTTP_MSG_OTA_UPDATE_INITIALIZED[0m
+[0;32mI (14078) http_server: Step 1: Sending FW_REQUEST[0m
+[0;32mI (14078) http_server: Sent command: 0[0m
+[0;32mI (14398) http_server: Step 2: Waiting for FW_READY[0m
+[0;32mI (14398) http_server: Received expected response: 1[0m
+[0;32mI (14398) http_server: Step 3: Sending FW_LENGTH: 2172 bytes[0m
+[0;32mI (14398) http_server: Sent command: 2 with data: 2172[0m
+[0;32mI (14398) http_server: Step 4: Waiting for FW_OK or FW_ERR[0m
+[0;33mW (14408) http_server: Received unexpected response: 100 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14418) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14418) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14428) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14438) http_server: Received unexpected response: 219 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14448) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14458) http_server: Received unexpected response: 104 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14458) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14468) http_server: Received unexpected response: 216 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14478) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14488) http_server: Received unexpected response: 232 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14488) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14498) http_server: Received unexpected response: 108 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14508) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14518) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14528) http_server: Received unexpected response: 72 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14528) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14538) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14548) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14558) http_server: Received unexpected response: 250 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14568) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14568) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14588) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14588) http_server: Received unexpected response: 72 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14598) http_server: Received unexpected response: 219 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14608) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14608) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14618) http_server: Received unexpected response: 254 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14628) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14638) http_server: Received unexpected response: 96 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14638) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14648) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14658) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14668) http_server: Received unexpected response: 246 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14678) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14678) http_server: Received unexpected response: 72 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14688) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14698) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14708) http_server: Received unexpected response: 176 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14708) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14718) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14728) http_server: Received unexpected response: 192 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14738) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14748) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14748) http_server: Received unexpected response: 104 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14758) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14768) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14778) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14778) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14788) http_server: Received unexpected response: 232 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14798) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14808) http_server: Received unexpected response: 192 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14808) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14818) http_server: Received unexpected response: 184 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14828) http_server: Received unexpected response: 1 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14838) http_server: Received unexpected response: 96 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14848) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14848) http_server: Received unexpected response: 130 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14858) http_server: Received unexpected response: 254 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14868) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14878) http_server: Received unexpected response: 200 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14888) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14888) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14898) http_server: Received unexpected response: 249 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14908) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14918) http_server: Received unexpected response: 72 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14928) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14928) http_server: Received unexpected response: 32 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14938) http_server: Received unexpected response: 250 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14948) http_server: Received unexpected response: 0 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14948) http_server: Received unexpected response: 64 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;33mW (14958) http_server: Received unexpected response: 255 (expected: FW_OK=3 or FW_ERR=4)[0m
+[0;32mI (14968) http_server: Received FW_OK - STM32 accepted the length[0m
+[0;32mI (14978) http_server: Step 5: Starting firmware data transmission[0m
+[0;32mI (14988) http_server: Sent 8 bytes of firmware data to STM32[0m
+[0;33mW (14988) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (14988) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (14998) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (15008) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15008) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (15028) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15028) http_server: Received unexpected response: 50 (expected: 5)[0m
+[0;33mW (15048) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15048) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (15068) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15068) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (15068) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15088) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15088) http_server: Received unexpected response: 80 (expected: 5)[0m
+[0;33mW (15088) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15108) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15108) http_server: Received unexpected response: 136 (expected: 5)[0m
+[0;33mW (15118) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (15128) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15128) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (15148) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (15148) http_server: Received unexpected response: 172 (expected: 5)[0m
+[0;33mW (15168) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (15168) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (15188) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15188) http_server: Received unexpected response: 176 (expected: 5)[0m
+[0;33mW (15188) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15208) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15208) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (15208) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15228) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (15228) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (15238) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15248) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15248) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (15268) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15268) http_server: Received unexpected response: 244 (expected: 5)[0m
+[0;33mW (15288) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15288) http_server: Received unexpected response: 112 (expected: 5)[0m
+[0;33mW (15308) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15308) http_server: Received unexpected response: 176 (expected: 5)[0m
+[0;33mW (15328) http_server: Received unexpected response: 3 (expected: 5)[0m
+[0;33mW (15328) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (15348) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15348) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (15368) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15368) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (15388) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15388) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (15388) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (15408) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (15408) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (15408) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15428) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15428) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (15448) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15448) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (15448) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15468) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15468) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (15468) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15488) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15488) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (15508) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15508) http_server: Received unexpected response: 176 (expected: 5)[0m
+[0;33mW (15528) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15528) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (15548) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15548) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (15568) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15568) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (15588) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15588) http_server: Received unexpected response: 232 (expected: 5)[0m
+[0;33mW (15608) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15608) http_server: Received unexpected response: 244 (expected: 5)[0m
+[0;33mW (15628) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15628) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (15648) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15648) http_server: Received unexpected response: 232 (expected: 5)[0m
+[0;33mW (15648) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (15668) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15668) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (15668) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15688) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15688) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (15688) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (15708) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15708) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (15708) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15728) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15728) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (15748) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15748) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (15768) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15768) http_server: Received unexpected response: 217 (expected: 5)[0m
+[0;33mW (15788) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15788) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (15788) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15808) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15808) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (15808) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15828) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (15828) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (15828) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (15848) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15848) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (15848) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15868) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15868) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (15888) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15888) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (15908) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15908) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15928) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15928) http_server: Received unexpected response: 228 (expected: 5)[0m
+[0;33mW (15928) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (15948) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15948) http_server: Received unexpected response: 244 (expected: 5)[0m
+[0;33mW (15968) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15968) http_server: Received unexpected response: 120 (expected: 5)[0m
+[0;33mW (15988) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (15988) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (15988) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16008) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16008) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (16028) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16028) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (16028) http_server: Received unexpected response: 218 (expected: 5)[0m
+[0;33mW (16048) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16048) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (16068) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16068) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (16088) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16088) http_server: Received unexpected response: 248 (expected: 5)[0m
+[0;33mW (16108) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16108) http_server: Received unexpected response: 253 (expected: 5)[0m
+[0;33mW (16128) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16128) http_server: Received unexpected response: 108 (expected: 5)[0m
+[0;33mW (16148) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16148) http_server: Received unexpected response: 176 (expected: 5)[0m
+[0;33mW (16168) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16168) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (16168) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16188) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16188) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (16188) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16208) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16208) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (16228) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16228) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (16228) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (16248) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16248) http_server: Received unexpected response: 210 (expected: 5)[0m
+[0;33mW (16268) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (16268) http_server: Received unexpected response: 232 (expected: 5)[0m
+[0;33mW (16288) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16288) http_server: Received unexpected response: 211 (expected: 5)[0m
+[0;33mW (16308) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16308) http_server: Received unexpected response: 146 (expected: 5)[0m
+[0;33mW (16328) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16328) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (16348) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16348) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (16368) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16368) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (16368) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16388) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16388) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (16408) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16408) http_server: Received unexpected response: 88 (expected: 5)[0m
+[0;33mW (16428) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16428) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (16428) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16448) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16448) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (16448) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (16468) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16468) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16468) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (16488) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16488) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (16488) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (16508) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16508) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (16508) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16528) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16528) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (16528) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16548) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16548) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (16548) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16568) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16568) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (16588) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16588) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (16608) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16608) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (16628) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16628) http_server: Received unexpected response: 237 (expected: 5)[0m
+[0;33mW (16648) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16648) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (16648) http_server: Received unexpected response: 109 (expected: 5)[0m
+[0;33mW (16668) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16668) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (16688) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16688) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (16708) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16708) http_server: Received unexpected response: 248 (expected: 5)[0m
+[0;33mW (16708) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16728) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16728) http_server: Received unexpected response: 120 (expected: 5)[0m
+[0;33mW (16748) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (16748) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (16768) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16768) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (16788) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16788) http_server: Received unexpected response: 50 (expected: 5)[0m
+[0;33mW (16808) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16808) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (16828) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (16828) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (16828) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16848) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16848) http_server: Received unexpected response: 221 (expected: 5)[0m
+[0;33mW (16848) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16868) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (16868) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (16888) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (16888) http_server: Received unexpected response: 252 (expected: 5)[0m
+[0;33mW (16908) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16908) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (16928) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16928) http_server: Received unexpected response: 146 (expected: 5)[0m
+[0;33mW (16948) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16948) http_server: Received unexpected response: 116 (expected: 5)[0m
+[0;33mW (16948) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (16968) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16968) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (16968) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (16988) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (16988) http_server: Received unexpected response: 252 (expected: 5)[0m
+[0;33mW (17008) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17008) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (17028) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17028) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (17048) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17048) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (17068) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17068) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (17088) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (17088) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (17088) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17108) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17108) http_server: Received unexpected response: 176 (expected: 5)[0m
+[0;33mW (17128) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17128) http_server: Received unexpected response: 240 (expected: 5)[0m
+[0;33mW (17148) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17148) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (17148) http_server: Received unexpected response: 125 (expected: 5)[0m
+[0;33mW (17168) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17168) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (17168) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (17188) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17188) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (17208) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17208) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (17228) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (17228) http_server: Received unexpected response: 184 (expected: 5)[0m
+[0;33mW (17248) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17248) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (17268) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17268) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (17268) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17288) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17288) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (17308) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17308) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17308) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17328) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17328) http_server: Received unexpected response: 164 (expected: 5)[0m
+[0;33mW (17348) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (17348) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (17348) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (17368) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17368) http_server: Received unexpected response: 178 (expected: 5)[0m
+[0;33mW (17368) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (17388) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17388) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (17408) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17408) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (17428) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17428) http_server: Received unexpected response: 36 (expected: 5)[0m
+[0;33mW (17448) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17448) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (17448) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17468) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17468) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (17468) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17488) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17488) http_server: Received unexpected response: 248 (expected: 5)[0m
+[0;33mW (17508) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17508) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (17528) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (17528) http_server: Received unexpected response: 4 (expected: 5)[0m
+[0;33mW (17548) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17548) http_server: Received unexpected response: 8 (expected: 5)[0m
+[0;33mW (17548) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (17568) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17568) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (17568) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17588) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17588) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (17608) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17608) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (17608) http_server: Received unexpected response: 218 (expected: 5)[0m
+[0;33mW (17628) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17628) http_server: Received unexpected response: 209 (expected: 5)[0m
+[0;33mW (17648) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17648) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (17648) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17668) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17668) http_server: Received unexpected response: 184 (expected: 5)[0m
+[0;33mW (17688) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17688) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (17708) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17708) http_server: Received unexpected response: 250 (expected: 5)[0m
+[0;33mW (17728) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17728) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (17748) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17748) http_server: Received unexpected response: 100 (expected: 5)[0m
+[0;33mW (17748) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17768) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17768) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (17768) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17788) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17788) http_server: Received unexpected response: 196 (expected: 5)[0m
+[0;33mW (17808) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17808) http_server: Received unexpected response: 152 (expected: 5)[0m
+[0;33mW (17808) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (17828) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17828) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (17848) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17848) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (17868) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17868) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (17868) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (17888) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17888) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (17908) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17908) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (17928) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17928) http_server: Received unexpected response: 243 (expected: 5)[0m
+[0;33mW (17948) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17948) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (17968) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (17968) http_server: Received unexpected response: 228 (expected: 5)[0m
+[0;33mW (17988) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (17988) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (18008) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18008) http_server: Received unexpected response: 240 (expected: 5)[0m
+[0;33mW (18028) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18028) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (18028) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18048) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18048) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (18048) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (18068) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18068) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18068) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (18088) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18088) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (18088) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (18108) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18108) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18128) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18128) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (18148) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18148) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (18168) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18168) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (18188) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18188) http_server: Received unexpected response: 65 (expected: 5)[0m
+[0;33mW (18208) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18208) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18208) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18228) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18228) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18228) http_server: Received unexpected response: 109 (expected: 5)[0m
+[0;33mW (18248) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18248) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (18248) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18268) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18268) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (18268) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (18288) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18288) http_server: Received unexpected response: 152 (expected: 5)[0m
+[0;33mW (18308) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18308) http_server: Received unexpected response: 36 (expected: 5)[0m
+[0;33mW (18328) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18328) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18348) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18348) http_server: Received unexpected response: 246 (expected: 5)[0m
+[0;33mW (18368) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18368) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18368) http_server: Received unexpected response: 250 (expected: 5)[0m
+[0;33mW (18388) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18388) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (18408) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18408) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (18428) http_server: Received unexpected response: 3 (expected: 5)[0m
+[0;33mW (18428) http_server: Received unexpected response: 243 (expected: 5)[0m
+[0;33mW (18448) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18448) http_server: Received unexpected response: 132 (expected: 5)[0m
+[0;33mW (18468) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (18468) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (18468) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18488) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18488) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (18508) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18508) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18508) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18528) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18528) http_server: Received unexpected response: 100 (expected: 5)[0m
+[0;33mW (18528) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (18548) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18548) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (18548) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (18568) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18568) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (18568) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18578) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18588) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (18588) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18598) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18608) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (18608) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (18618) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18618) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (18638) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18638) http_server: Received unexpected response: 240 (expected: 5)[0m
+[0;33mW (18658) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18658) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (18678) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18678) http_server: Received unexpected response: 160 (expected: 5)[0m
+[0;33mW (18698) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18698) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (18718) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18718) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (18738) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18738) http_server: Received unexpected response: 228 (expected: 5)[0m
+[0;33mW (18758) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (18758) http_server: Received unexpected response: 242 (expected: 5)[0m
+[0;33mW (18778) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18788) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (18798) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18798) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (18818) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18818) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (18828) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (18838) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18838) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (18858) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18858) http_server: Received unexpected response: 36 (expected: 5)[0m
+[0;33mW (18868) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (18878) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18878) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (18898) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18898) http_server: Received unexpected response: 249 (expected: 5)[0m
+[0;33mW (18918) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18918) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (18938) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18938) http_server: Received unexpected response: 253 (expected: 5)[0m
+[0;33mW (18958) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18958) http_server: Received unexpected response: 242 (expected: 5)[0m
+[0;33mW (18978) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18978) http_server: Received unexpected response: 242 (expected: 5)[0m
+[0;33mW (18988) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (18998) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (18998) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (19008) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19018) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19018) http_server: Received unexpected response: 218 (expected: 5)[0m
+[0;33mW (19038) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19038) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (19048) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19058) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19058) http_server: Received unexpected response: 253 (expected: 5)[0m
+[0;33mW (19078) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19078) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (19098) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19098) http_server: Received unexpected response: 48 (expected: 5)[0m
+[0;33mW (19098) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19118) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (19118) http_server: Received unexpected response: 153 (expected: 5)[0m
+[0;33mW (19138) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19138) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (19138) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (19158) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19158) http_server: Received unexpected response: 155 (expected: 5)[0m
+[0;33mW (19178) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19178) http_server: Received unexpected response: 252 (expected: 5)[0m
+[0;33mW (19198) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19198) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (19218) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19218) http_server: Received unexpected response: 160 (expected: 5)[0m
+[0;33mW (19218) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19238) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19238) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19248) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (19258) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19258) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (19268) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (19278) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19278) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (19298) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19298) http_server: Received unexpected response: 250 (expected: 5)[0m
+[0;33mW (19318) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19318) http_server: Received unexpected response: 217 (expected: 5)[0m
+[0;33mW (19338) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19338) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (19338) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19358) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19358) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19368) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (19378) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19378) http_server: Received unexpected response: 232 (expected: 5)[0m
+[0;33mW (19398) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19398) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (19418) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19418) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (19418) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19438) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (19438) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (19458) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19458) http_server: Received unexpected response: 109 (expected: 5)[0m
+[0;33mW (19458) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19478) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19478) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (19488) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19498) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19498) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (19508) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19518) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19518) http_server: Received unexpected response: 136 (expected: 5)[0m
+[0;33mW (19518) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19538) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19538) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (19548) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19558) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19558) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (19568) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19578) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19578) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (19598) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19598) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (19618) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19618) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (19618) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19638) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19638) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (19638) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19658) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19658) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (19668) http_server: Received unexpected response: 243 (expected: 5)[0m
+[0;33mW (19678) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19678) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (19698) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19698) http_server: Received unexpected response: 109 (expected: 5)[0m
+[0;33mW (19718) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19718) http_server: Received unexpected response: 176 (expected: 5)[0m
+[0;33mW (19738) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19738) http_server: Received unexpected response: 164 (expected: 5)[0m
+[0;33mW (19758) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19758) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (19778) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19778) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (19778) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (19798) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19798) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (19818) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19818) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (19838) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19838) http_server: Received unexpected response: 232 (expected: 5)[0m
+[0;33mW (19858) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19858) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (19878) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19878) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (19898) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19898) http_server: Received unexpected response: 72 (expected: 5)[0m
+[0;33mW (19918) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19918) http_server: Received unexpected response: 248 (expected: 5)[0m
+[0;33mW (19938) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (19938) http_server: Received unexpected response: 160 (expected: 5)[0m
+[0;33mW (19938) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (19958) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19958) http_server: Received unexpected response: 152 (expected: 5)[0m
+[0;33mW (19978) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19978) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19978) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (19998) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (19998) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (20018) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20018) http_server: Received unexpected response: 250 (expected: 5)[0m
+[0;33mW (20038) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20038) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (20038) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20058) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20058) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (20058) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20078) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20078) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (20078) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (20098) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20098) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20108) http_server: Received unexpected response: 109 (expected: 5)[0m
+[0;33mW (20118) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20118) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (20118) http_server: Received unexpected response: 250 (expected: 5)[0m
+[0;33mW (20138) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20138) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20158) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20158) http_server: Received unexpected response: 32 (expected: 5)[0m
+[0;33mW (20158) http_server: Received unexpected response: 254 (expected: 5)[0m
+[0;33mW (20178) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20178) http_server: Received unexpected response: 184 (expected: 5)[0m
+[0;33mW (20178) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20198) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20198) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (20218) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20218) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (20218) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20238) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20238) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (20238) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20258) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20258) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (20258) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (20278) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20278) http_server: Received unexpected response: 96 (expected: 5)[0m
+[0;33mW (20278) http_server: Received unexpected response: 219 (expected: 5)[0m
+[0;33mW (20298) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20298) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (20298) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20318) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20318) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20318) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (20338) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20338) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (20358) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (20358) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (20378) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20378) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20398) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20398) http_server: Received unexpected response: 218 (expected: 5)[0m
+[0;33mW (20418) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20418) http_server: Received unexpected response: 200 (expected: 5)[0m
+[0;33mW (20438) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20438) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (20458) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (20458) http_server: Received unexpected response: 209 (expected: 5)[0m
+[0;33mW (20478) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20478) http_server: Received unexpected response: 224 (expected: 5)[0m
+[0;33mW (20498) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20498) http_server: Received unexpected response: 233 (expected: 5)[0m
+[0;33mW (20518) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (20518) http_server: Received unexpected response: 235 (expected: 5)[0m
+[0;33mW (20538) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20538) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (20558) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20558) http_server: Received unexpected response: 201 (expected: 5)[0m
+[0;33mW (20558) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (20578) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20578) http_server: Received unexpected response: 48 (expected: 5)[0m
+[0;33mW (20578) http_server: Received unexpected response: 238 (expected: 5)[0m
+[0;33mW (20598) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20598) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (20618) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20618) http_server: Received unexpected response: 144 (expected: 5)[0m
+[0;33mW (20618) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20638) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20638) http_server: Received unexpected response: 248 (expected: 5)[0m
+[0;33mW (20658) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20658) http_server: Received unexpected response: 128 (expected: 5)[0m
+[0;33mW (20658) http_server: Received unexpected response: 236 (expected: 5)[0m
+[0;33mW (20678) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20678) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20678) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20698) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20698) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (20698) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (20718) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20718) http_server: Received unexpected response: 64 (expected: 5)[0m
+[0;33mW (20738) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20738) http_server: Received unexpected response: 216 (expected: 5)[0m
+[0;33mW (20758) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (20758) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20758) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20778) http_server: Received unexpected response: 2 (expected: 5)[0m
+[0;33mW (20778) http_server: Received unexpected response: 152 (expected: 5)[0m
+[0;33mW (20798) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20798) http_server: Received unexpected response: 100 (expected: 5)[0m
+[0;33mW (20798) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (20818) http_server: Received unexpected response: 1 (expected: 5)[0m
+[0;33mW (20818) http_server: Received unexpected response: 228 (expected: 5)[0m
+[0;33mW (20818) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20838) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20838) http_server: Received unexpected response: 73 (expected: 5)[0m
+[0;33mW (20838) http_server: Received unexpected response: 251 (expected: 5)[0m
+[0;33mW (20858) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20858) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20878) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20878) http_server: Received unexpected response: 105 (expected: 5)[0m
+[0;33mW (20878) http_server: Received unexpected response: 255 (expected: 5)[0m
+[0;33mW (20898) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20898) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (20898) http_server: Received unexpected response: 253 (expected: 5)[0m
+[0;33mW (20918) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20918) http_server: Received unexpected response: 104 (expected: 5)[0m
+[0;33mW (20938) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20938) http_server: Received unexpected response: 208 (expected: 5)[0m
+[0;33mW (20958) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20958) http_server: Received unexpected response: 228 (expected: 5)[0m
+[0;33mW (20978) http_server: Received unexpected response: 0 (expected: 5)[0m
+[0;33mW (20978) http_server: Received unexpected response: 192 (expected: 5)[0m
+[0;33mW (20998) http_server: Received unexpected response: 0 (expected: 5)[0m
+[1;31mE (20998) http_server: Timeout waiting for response: 5[0m
+[1;31mE (20998) http_server: STM32 did not acknowledge byte at offset 0[0m
+[0;33mW (21008) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - STM32 did not acknowledge data byte[0m
+[0;33mW (21018) httpd_uri: httpd_uri: uri handler execution failed[0m

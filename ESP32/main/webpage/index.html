@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/webpage/style.css">
+    <title>OTA Firmware Update</title>
+</head>
+<body>
+    <div class="container">
+        <h1>OTA Firmware Update</h1>
+        
+        <div class="upload-section">
+            <h2>Upload Firmware</h2>
+            <p>Select a .hex or .bin file to upload to the device:</p>
+            <p><small><strong>Note:</strong> .hex files will be automatically converted to .bin format for optimal transmission.</small></p>
+
+            <input type="file" id="firmwareFile" class="file-input" accept=".hex,.bin">
+            <button id="uploadBtn">Upload Firmware</button>
+            
+            <div class="progress-container" id="uploadProgressContainer" style="display: none;">
+                <div class="progress-bar" id="uploadProgressBar">0%</div>
+            </div>
+            
+            <div id="uploadStatus" class="status" style="display: none;"></div>
+        </div>
+        
+        <div class="download-section">
+            <h2>Download Firmware</h2>
+            <p>Send the firmware (in binary format) from ESP32 to STM32 via UART:</p>
+            
+            <button id="downloadBtn">Download to Device</button>
+            
+            <div class="progress-container" id="downloadProgressContainer" style="display: none;">
+                <div class="progress-bar" id="downloadProgressBar">0%</div>
+            </div>
+            
+            <div id="downloadStatus" class="status" style="display: none;"></div>
+        </div>
+    </div>
+</body>
+<script src="webpage/script.js"></script>
+</html>
