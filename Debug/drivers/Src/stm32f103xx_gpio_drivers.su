@@ -1,0 +1,4 @@
+../drivers/Src/stm32f103xx_gpio_drivers.c:10:6:GPIO_PeriClockControl	16	static
+../drivers/Src/stm32f103xx_gpio_drivers.c:21:13:AlternativeMode_Init	32	static
+../drivers/Src/stm32f103xx_gpio_drivers.c:47:6:GPIO_Init	24	static
+../drivers/Src/stm32f103xx_gpio_drivers.c:87:6:GPIO_Toggle	16	static

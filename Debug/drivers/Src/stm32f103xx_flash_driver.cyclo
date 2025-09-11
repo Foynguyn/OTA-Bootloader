@@ -1,0 +1,6 @@
+../drivers/Src/stm32f103xx_flash_driver.c:10:6:FLASH_Unlock	1
+../drivers/Src/stm32f103xx_flash_driver.c:15:6:FLASH_Lock	1
+../drivers/Src/stm32f103xx_flash_driver.c:19:9:FLASH_WriteData	5
+../drivers/Src/stm32f103xx_flash_driver.c:55:6:FLASH_ReadData	2
+../drivers/Src/stm32f103xx_flash_driver.c:72:6:FLASH_Erase	2
+../drivers/Src/stm32f103xx_flash_driver.c:86:6:FLASH_RemovePartition	2

@@ -1,0 +1,10 @@
+../drivers/Src/stm32f103xx_usart_driver.c:10:13:USART_RXNE_Interrupt_Handle	5
+../drivers/Src/stm32f103xx_usart_driver.c:64:6:USART_PeriClockControl	3
+../drivers/Src/stm32f103xx_usart_driver.c:71:6:USART_Start	1
+../drivers/Src/stm32f103xx_usart_driver.c:80:6:USART_Init	13
+../drivers/Src/stm32f103xx_usart_driver.c:150:6:USART_SetBaudRate	1
+../drivers/Src/stm32f103xx_usart_driver.c:174:6:USART_SendData	6
+../drivers/Src/stm32f103xx_usart_driver.c:208:9:USART_ReceiveDataIT	2
+../drivers/Src/stm32f103xx_usart_driver.c:225:6:USART_IRQHandling	3
+../drivers/Src/stm32f103xx_usart_driver.c:235:6:USART1_IRQHandler	1
+../drivers/Src/stm32f103xx_usart_driver.c:240:13:USART_ReceptionEventsCallback	1
