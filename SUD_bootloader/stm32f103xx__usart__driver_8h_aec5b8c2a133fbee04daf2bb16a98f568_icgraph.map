@@ -1,0 +1,9 @@
+<map id="USART_SetBaudRate" name="USART_SetBaudRate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="410,5,562,32"/>
+<area shape="rect" id="Node000002" href="$stm32f103xx__usart__driver_8c.html#a9f8081684bf9bf4f54f5a54e97a86f90" title=" " alt="" coords="271,5,362,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="395,21,363,21,363,16,395,16"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a33694c0f2410114eb0ce0838c1b59154" title=" " alt="" coords="103,5,223,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,21,223,21,223,16,255,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

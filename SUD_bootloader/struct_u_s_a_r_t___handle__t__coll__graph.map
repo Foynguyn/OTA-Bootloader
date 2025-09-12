@@ -1,0 +1,7 @@
+<map id="USART_Handle_t" name="USART_Handle_t">
+<area shape="rect" id="Node000001" title=" " alt="" coords="85,104,211,131"/>
+<area shape="rect" id="Node000002" href="$struct_u_s_a_r_t___type_def__t.html" title=" " alt="" coords="5,5,139,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,43,140,102,136,105,89,46"/>
+<area shape="rect" id="Node000003" href="$struct_u_s_a_r_t___config__t.html" title=" " alt="" coords="163,5,285,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,47,194,82,168,105,165,101,190,78,211,45"/>
+</map>

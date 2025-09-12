@@ -1,0 +1,9 @@
+<map id="FLASH_RemovePartition" name="FLASH_RemovePartition">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,174,83"/>
+<area shape="rect" id="Node000002" href="$stm32f103xx__flash__driver_8c.html#ac1b414aa6d6d6f295d3e3d25a7b24d9b" title=" " alt="" coords="225,5,330,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,53,210,34,212,39,143,58"/>
+<area shape="rect" id="Node000003" href="$stm32f103xx__flash__driver_8c.html#ab80bcb70e8ba7979ffe700b707a4ac76" title=" " alt="" coords="228,56,328,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,67,212,67,212,72,174,72"/>
+<area shape="rect" id="Node000004" href="$stm32f103xx__flash__driver_8c.html#a375930f02e82db922e036ed8da814cd6" title=" " alt="" coords="222,107,334,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,81,212,100,210,105,141,86"/>
+</map>

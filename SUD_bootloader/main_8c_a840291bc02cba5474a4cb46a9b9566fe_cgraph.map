@@ -1,0 +1,50 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,284,55,311"/>
+<area shape="rect" id="Node000002" href="$stm32f103xx__bootloader_8c.html#a6d7164565484e9a58e65f558d9e95fe4" title=" " alt="" coords="111,5,262,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="28,284,30,238,39,173,48,138,60,104,78,71,101,42,104,39,108,43,105,46,82,74,65,106,53,140,44,175,35,238,34,284"/>
+<area shape="rect" id="Node000003" href="$stm32f103xx__bootloader_8c.html#a782d4975418ed61f4c1bb5d2d51f354d" title=" " alt="" coords="114,56,260,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="29,283,34,246,45,195,66,140,82,115,101,93,105,89,108,93,105,97,86,118,71,143,50,196,39,247,35,284"/>
+<area shape="rect" id="Node000004" href="$stm32f103xx__flash__driver_8c.html#aa03058ed149ba224b98984b98fc75591" title=" " alt="" coords="122,107,252,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="31,283,38,254,52,217,72,177,101,143,106,139,110,143,105,147,77,180,57,219,44,256,36,284"/>
+<area shape="rect" id="Node000005" href="$stm32f103xx__flash__driver_8c.html#a39a14ecd226dd5113afc1d52c3ceed9a" title=" " alt="" coords="103,157,271,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="35,282,60,239,78,215,101,194,109,189,112,193,104,198,82,218,64,242,40,285"/>
+<area shape="rect" id="Node000009" href="$stm32f103xx__flash__driver_8c.html#a5293c75b5ea00ade7109736e5bdecd7e" title=" " alt="" coords="122,208,252,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="46,282,71,262,101,244,116,238,118,243,104,249,74,267,49,286"/>
+<area shape="rect" id="Node000010" href="$main_8c.html#a295e97a1cda57b7f5395ad9b94fe2256" title=" " alt="" coords="128,259,246,285"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="55,291,113,281,113,287,56,296"/>
+<area shape="rect" id="Node000014" href="$stm32f103xx__core__driver_8c.html#a26458b4c5df801f53fcf1f4e85af164f" title=" " alt="" coords="113,309,260,336"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="56,299,98,306,97,311,55,304"/>
+<area shape="rect" id="Node000015" href="$main_8c.html#a7e60b0777d8d8a18cf96a21a05ebee8f" title=" " alt="" coords="118,360,256,387"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="49,309,74,328,104,346,118,352,116,357,101,350,71,332,46,313"/>
+<area shape="rect" id="Node000017" href="$main_8c.html#a33694c0f2410114eb0ce0838c1b59154" title=" " alt="" coords="127,411,247,437"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="40,310,64,353,82,376,104,397,114,403,111,407,101,401,78,380,60,356,35,312"/>
+<area shape="rect" id="Node000021" href="$stm32f103xx__usart__driver_8c.html#a1964217ea043b7b56717968ed9413b02" title=" " alt="" coords="319,487,480,513"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="36,310,43,340,55,377,75,416,104,447,138,463,187,475,304,491,303,496,186,480,136,468,101,451,71,419,50,379,37,341,31,311"/>
+<area shape="rect" id="Node000022" href="$stm32f103xx__usart__driver_8c.html#a54d267c274e2bae6672730035eb20df3" title=" " alt="" coords="136,563,238,589"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="34,311,35,356,44,420,53,455,65,489,82,521,104,549,123,562,120,566,101,553,78,524,60,491,48,456,39,421,30,357,28,311"/>
+<area shape="rect" id="Node000023" href="$main_8c.html#abb23aea92aa3a7b1a9b7181900b4f5d2" title=" " alt="" coords="140,512,234,539"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="35,311,40,347,52,395,73,446,87,470,104,491,127,507,124,512,101,495,83,473,68,449,47,396,35,348,30,312"/>
+<area shape="rect" id="Node000006" href="$stm32f103xx__flash__driver_8c.html#ac1b414aa6d6d6f295d3e3d25a7b24d9b" title=" " alt="" coords="347,107,452,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="246,154,331,133,332,139,247,159"/>
+<area shape="rect" id="Node000007" href="$stm32f103xx__flash__driver_8c.html#ab80bcb70e8ba7979ffe700b707a4ac76" title=" " alt="" coords="350,208,449,235"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="247,182,335,203,334,209,246,187"/>
+<area shape="rect" id="Node000008" href="$stm32f103xx__flash__driver_8c.html#a375930f02e82db922e036ed8da814cd6" title=" " alt="" coords="344,157,456,184"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="271,168,328,168,328,173,271,173"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="252,219,334,219,334,224,252,224"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="246,205,328,185,329,190,247,210"/>
+<area shape="rect" id="Node000011" href="$stm32f103xx__gpio__drivers_8c.html#a214003040f1f142c43080ef8ced72b00" title=" " alt="" coords="360,259,439,285"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="246,269,345,269,345,275,246,275"/>
+<area shape="rect" id="Node000012" href="$stm32f103xx__gpio__drivers_8c.html#a2f76b5d3c4e4d703317724eff411ffcc" title=" " alt="" coords="544,233,685,260"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="440,265,529,254,529,259,440,270"/>
+<area shape="rect" id="Node000013" href="$stm32f103xx__gpio__drivers_8c.html#a19730db1d96d2f10d5e1f5ff898899c3" title=" " alt="" coords="534,284,695,311"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="440,274,519,283,519,289,440,279"/>
+<area shape="rect" id="Node000016" href="$stm32f103xx__usart__driver_8c.html#adae6f8147657242de6278d7bfe74f901" title=" " alt="" coords="334,360,465,387"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="256,371,319,371,319,376,256,376"/>
+<area shape="rect" id="Node000018" href="$stm32f103xx__usart__driver_8c.html#a9f8081684bf9bf4f54f5a54e97a86f90" title=" " alt="" coords="354,411,445,437"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="247,421,338,421,338,427,247,427"/>
+<area shape="rect" id="Node000019" href="$stm32f103xx__usart__driver_8c.html#a81bb0ba2a560995d6cc9345511232730" title=" " alt="" coords="528,385,701,412"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="446,416,513,408,513,413,446,421"/>
+<area shape="rect" id="Node000020" href="$stm32f103xx__usart__driver_8c.html#aec5b8c2a133fbee04daf2bb16a98f568" title=" " alt="" coords="539,436,690,463"/>
+<area shape="poly" id="edge21_Node000018_Node000020" title=" " alt="" coords="446,427,523,436,523,441,446,432"/>
+<area shape="poly" id="edge25_Node000023_Node000021" title=" " alt="" coords="234,517,303,509,304,514,235,522"/>
+</map>

@@ -1,0 +1,33 @@
+<map id="bootloader_final.bak/drivers/Inc/stm32f103xx_rcc_driver.h" name="bootloader_final.bak/drivers/Inc/stm32f103xx_rcc_driver.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="546,5,711,64"/>
+<area shape="rect" id="Node000002" href="$stm32f103xx_8h.html" title=" " alt="" coords="540,112,717,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="622,79,624,112,619,112,617,79"/>
+<area shape="poly" id="edge15_Node000002_Node000001" title=" " alt="" coords="635,97,634,64,640,64,640,97"/>
+<area shape="rect" id="Node000003" href="$main_8c.html" title=": Main program body &#45; STM32 Bootloader for ESP32 communication" alt="" coords="5,211,143,253"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,147,351,168,253,185,156,205,130,213,128,208,155,200,252,179,351,163,525,141"/>
+<area shape="rect" id="Node000004" href="$stm32f103xx__bootloader_8h.html" title=" " alt="" coords="167,203,333,261"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="526,158,334,205,332,200,524,153"/>
+<area shape="rect" id="Node000006" href="$stm32f103xx__core__driver_8h.html" title=" " alt="" coords="357,203,522,261"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="568,164,489,204,486,200,566,159"/>
+<area shape="rect" id="Node000008" href="$stm32f103xx__flash__driver_8h.html" title=" " alt="" coords="546,203,711,261"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="623,170,623,202,618,202,617,170"/>
+<area shape="rect" id="Node000010" href="$stm32f103xx__gpio__driver_8h.html" title=" " alt="" coords="735,203,901,261"/>
+<area shape="poly" id="edge12_Node000002_Node000010" title=" " alt="" coords="676,160,755,200,752,204,674,165"/>
+<area shape="rect" id="Node000012" href="$stm32f103xx__usart__driver_8h.html" title=" " alt="" coords="925,203,1090,261"/>
+<area shape="poly" id="edge16_Node000002_Node000012" title=" " alt="" coords="725,156,901,200,925,207,923,212,900,205,723,161"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="347,203,356,200,547,153,549,158,357,205,348,208"/>
+<area shape="rect" id="Node000005" href="$stm32f103xx__bootloader_8c.html" title=" " alt="" coords="161,309,328,368"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="250,277,249,309,243,309,245,277"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="516,193,594,153,597,158,519,198"/>
+<area shape="rect" id="Node000007" href="$stm32f103xx__core__driver_8c.html" title=" " alt="" coords="353,309,520,368"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="441,277,440,309,435,309,436,277"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="635,187,634,155,639,155,640,187"/>
+<area shape="rect" id="Node000009" href="$stm32f103xx__flash__driver_8c.html" title=" " alt="" coords="545,309,712,368"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="631,277,631,309,626,309,626,277"/>
+<area shape="poly" id="edge13_Node000010_Node000002" title=" " alt="" coords="755,197,676,158,678,153,758,193"/>
+<area shape="rect" id="Node000011" href="$stm32f103xx__gpio__drivers_8c.html" title=" " alt="" coords="737,309,904,368"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="822,277,823,309,817,309,816,277"/>
+<area shape="poly" id="edge17_Node000012_Node000002" title=" " alt="" coords="909,201,717,155,718,150,910,196"/>
+<area shape="rect" id="Node000013" href="$stm32f103xx__usart__driver_8c.html" title=" " alt="" coords="929,309,1096,368"/>
+<area shape="poly" id="edge18_Node000012_Node000013" title=" " alt="" coords="1012,277,1014,309,1009,309,1007,277"/>
+</map>
