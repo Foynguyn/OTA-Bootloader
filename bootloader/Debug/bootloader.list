@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00003004  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00001701  00000000  00000000  0000302d  2**0
+ 12 .debug_info   000016ce  00000000  00000000  0000302d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000007bd  00000000  00000000  0000472e  2**0
+ 13 .debug_abbrev 000007a2  00000000  00000000  000046fb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 000001a8  00000000  00000000  00004ef0  2**3
+ 14 .debug_aranges 000001a0  00000000  00000000  00004ea0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000133  00000000  00000000  00005098  2**0
+ 15 .debug_rnglists 0000012d  00000000  00000000  00005040  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0000273f  00000000  00000000  000051cb  2**0
+ 16 .debug_macro  000024a7  00000000  00000000  0000516d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000029b7  00000000  00000000  0000790a  2**0
+ 17 .debug_line   00002a65  00000000  00000000  00007614  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00008e47  00000000  00000000  0000a2c1  2**0
+ 18 .debug_str    000085e1  00000000  00000000  0000a079  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  00013108  2**0
+ 19 .comment      00000043  00000000  00000000  0001265a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000051c  00000000  00000000  0001314c  2**2
+ 20 .debug_frame  000004f4  00000000  00000000  000126a0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000037  00000000  00000000  00013668  2**0
+ 21 .debug_line_str 00000037  00000000  00000000  00012b94  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1001,109 +1001,49 @@ void USART_ReceptionEventsCallback(USART_Handle_t *pUSARTHandle)
  8000700:	20000064 	.word	0x20000064
 
 08000704 <Reset_Handler>:
-
-  .section .text.Reset_Handler
-  .weak Reset_Handler
-  .type Reset_Handler, %function
-Reset_Handler:
-  ldr   r0, =_estack
  8000704:	480d      	ldr	r0, [pc, #52]	@ (800073c <LoopForever+0x2>)
-  mov   sp, r0          /* set stack pointer */
  8000706:	4685      	mov	sp, r0
-/* Call the clock system initialization function.*/
-  bl  SystemInit
  8000708:	f3af 8000 	nop.w
-
-/* Copy the data segment initializers from flash to SRAM */
-  ldr r0, =_sdata
  800070c:	480c      	ldr	r0, [pc, #48]	@ (8000740 <LoopForever+0x6>)
-  ldr r1, =_edata
  800070e:	490d      	ldr	r1, [pc, #52]	@ (8000744 <LoopForever+0xa>)
-  ldr r2, =_sidata
  8000710:	4a0d      	ldr	r2, [pc, #52]	@ (8000748 <LoopForever+0xe>)
-  movs r3, #0
  8000712:	2300      	movs	r3, #0
-  b LoopCopyDataInit
  8000714:	e002      	b.n	800071c <LoopCopyDataInit>
 
 08000716 <CopyDataInit>:
-
-CopyDataInit:
-  ldr r4, [r2, r3]
  8000716:	58d4      	ldr	r4, [r2, r3]
-  str r4, [r0, r3]
  8000718:	50c4      	str	r4, [r0, r3]
-  adds r3, r3, #4
  800071a:	3304      	adds	r3, #4
 
 0800071c <LoopCopyDataInit>:
-
-LoopCopyDataInit:
-  adds r4, r0, r3
  800071c:	18c4      	adds	r4, r0, r3
-  cmp r4, r1
  800071e:	428c      	cmp	r4, r1
-  bcc CopyDataInit
  8000720:	d3f9      	bcc.n	8000716 <CopyDataInit>
-
-/* Zero fill the bss segment. */
-  ldr r2, =_sbss
  8000722:	4a0a      	ldr	r2, [pc, #40]	@ (800074c <LoopForever+0x12>)
-  ldr r4, =_ebss
  8000724:	4c0a      	ldr	r4, [pc, #40]	@ (8000750 <LoopForever+0x16>)
-  movs r3, #0
  8000726:	2300      	movs	r3, #0
-  b LoopFillZerobss
  8000728:	e001      	b.n	800072e <LoopFillZerobss>
 
 0800072a <FillZerobss>:
-
-FillZerobss:
-  str  r3, [r2]
  800072a:	6013      	str	r3, [r2, #0]
-  adds r2, r2, #4
  800072c:	3204      	adds	r2, #4
 
 0800072e <LoopFillZerobss>:
-
-LoopFillZerobss:
-  cmp r2, r4
  800072e:	42a2      	cmp	r2, r4
-  bcc FillZerobss
  8000730:	d3fb      	bcc.n	800072a <FillZerobss>
-
-/* Call static constructors */
-  bl __libc_init_array
  8000732:	f000 fcb5 	bl	80010a0 <__libc_init_array>
-/* Call the application's entry point.*/
-  bl main
  8000736:	f7ff fd1b 	bl	8000170 <main>
 
 0800073a <LoopForever>:
-
-LoopForever:
-  b LoopForever
  800073a:	e7fe      	b.n	800073a <LoopForever>
-  ldr   r0, =_estack
  800073c:	20005000 	.word	0x20005000
-  ldr r0, =_sdata
  8000740:	20000000 	.word	0x20000000
-  ldr r1, =_edata
  8000744:	20000004 	.word	0x20000004
-  ldr r2, =_sidata
  8000748:	08001124 	.word	0x08001124
-  ldr r2, =_sbss
  800074c:	20000004 	.word	0x20000004
-  ldr r4, =_ebss
  8000750:	20000078 	.word	0x20000078
 
 08000754 <ADC1_2_IRQHandler>:
- * @retval : None
-*/
-  .section .text.Default_Handler,"ax",%progbits
-Default_Handler:
-Infinite_Loop:
-  b Infinite_Loop
  8000754:	e7fe      	b.n	8000754 <ADC1_2_IRQHandler>
 	...
 

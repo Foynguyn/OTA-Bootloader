@@ -1,5 +1,6 @@
 #ifndef _STM32F1XX_RCC_H_
 #define _STM32F1XX_RCC_H_
+
 #include "stm32f103xx.h"
 
 /* ------------------------ TYPE DEFINITIONS ------------------------ */

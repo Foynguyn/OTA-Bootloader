@@ -83,8 +83,3 @@ void GPIO_Init(GPIO_Handle_t *pGPIOHandle)
 	pGPIOHandle->pGPIOx->ODR &= ~(1 << pGPIOHandle->GPIO_PinConfig.GPIO_PinNumber);
 	pGPIOHandle->pGPIOx->ODR |= temp;
 }
-
-void GPIO_Toggle(GPIO_TypeDef_t *pGPIOx, uint8_t PinNumber)
-{
-	pGPIOx->ODR ^= (1 << PinNumber);
-}
